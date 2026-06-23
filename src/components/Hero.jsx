@@ -123,22 +123,20 @@ export default function Hero() {
       <div className="container hero__inner">
         {/* ── LEFT: Text ── */}
         <div className="hero__content">
-          <span className="section-eyebrow">Automations that scale</span>
+          <span className="section-eyebrow">Automações em escala</span>
 
           <h1 className="hero__headline">
-            I build automations<br />
-            that <span className="gradient-text">save time</span> and<br />
-            <span className="gradient-text">drive results.</span>
+            Eu construo automações que <span className="gradient-text">economizam tempo</span> e <span className="gradient-text">geram resultados.</span>
           </h1>
 
           <p className="hero__sub">
-            I design and build reliable automations and integrations that connect
-            your tools, eliminate repetitive work, and scale your business —
-            so you can focus on what matters.
+            Eu planejo e construo automações e integrações confiáveis que conectam
+            suas ferramentas, eliminam trabalho repetitivo, e escalam seu negócio para
+            que você foque no que realmente importa.
           </p>
 
           <div className="hero__actions">
-            <a href="#projects" className="btn-primary">View My Work</a>
+            <a href="#projects" className="btn-primary">Veja Meu Trabalho</a>
             <a href="#contact" className="btn-ghost">Let's Work Together</a>
           </div>
         </div>
@@ -194,7 +192,7 @@ export default function Hero() {
       {/* ── Trusted By strip ── */}
       <div className="tools-strip">
         <div className="container">
-          <span className="tools-strip__label">I work with</span>
+          <span className="tools-strip__label">EU trabalho com</span>
           <div className="tools-strip__logos">
             {['n8n', 'Make', '..zapier', 'Airtable', 'Google Workspace', 'API', 'webhooks'].map((t) => (
               <span key={t} className="tools-strip__logo">{t}</span>

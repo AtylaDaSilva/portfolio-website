@@ -13,23 +13,23 @@ export default function About() {
       <div className="container about__inner">
         {/* Left */}
         <div className="about__text">
-          <span className="section-eyebrow">About me</span>
+          <span className="section-eyebrow">Sobre mim</span>
           <h2 className="about__heading">
-            Turning complex workflows into<br />
-            <span className="gradient-text">elegant automations</span>
+            Tornando workflows complexos em<br />
+            <span className="gradient-text">soluções elegantes</span>
           </h2>
           <p className="about__body">
-            I'm Alex Foster — a software engineer with 6 years of experience designing
-            intelligent automations and integrations. I bridge the gap between your
-            favorite tools and the data flows that power your business.
+            Me chamo Atyla da Silva — sou um desenvolvedor de sistemas com mais de 4 anos de experiência
+            construindo automações e integrações inteligentes. Eu conecto suas ferramentas
+            favoritas com os dados que impulsionam seu negócio.
           </p>
           <p className="about__body">
-            My stack covers everything from low-code platforms like Make and Zapier
-            to custom API integrations and event-driven architectures — all built to
-            run reliably, scale cleanly, and require minimal maintenance.
+            Minha stack envolve tudo desde plataformas low-code como Make e Zapier
+            até APIs customizadas e arquiteturas event-driven — todas planejadas para
+            rodar confiavelmente, escalar sem esforço, e precisar de mínima manutenção.
           </p>
           <a href="#contact" className="btn-primary" style={{ marginTop: 28, display: 'inline-flex' }}>
-            Get in touch
+            Entre em Contato
             <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

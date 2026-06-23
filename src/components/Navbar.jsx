@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Navbar.css'
 
-const links = ['Home', 'About', 'Services', 'Projects', 'Blog', 'Contact']
+const links = ['Home', 'Sobre', 'Serviços', 'Projeos', 'Blog', 'Contato']
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="container navbar__inner">
         <a href="#" className="navbar__logo">
-          <span className="logo-letters">AF</span>
+          <span className="logo-letters">AS</span>
         </a>
 
         <ul className={`navbar__links${menuOpen ? ' navbar__links--open' : ''}`}>
@@ -35,7 +35,7 @@ export default function Navbar() {
         </ul>
 
         <a href="#contact" className="btn-primary navbar__cta">
-          Let's Talk
+          Vamos Conversar
         </a>
 
         <button
