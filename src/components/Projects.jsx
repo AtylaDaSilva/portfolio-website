@@ -3,56 +3,56 @@ import './Projects.css'
 
 const projects = [
   {
-    title: 'E-Commerce Order Orchestration',
-    category: 'Integration',
-    desc: 'End-to-end order pipeline connecting Shopify, warehouse WMS, Stripe, and a custom customer notification system. Processes 2,000+ orders daily with zero manual intervention.',
-    tags: ['n8n', 'Shopify API', 'Webhooks', 'Stripe'],
-    metric: '2K+ orders/day',
+    title: 'Orquestração de Pedidos E-Commerce',
+    category: 'Integração',
+    desc: 'Pipeline de pedidos de ponta a ponta conectando Shopify, WMS de armazém, Stripe e um sistema de notificação de cliente personalizado. Processa mais de 2.000 pedidos por dia sem intervenção manual.',
+    tags: ['n8n', 'Shopify API', 'Webhooks', 'Python', 'Pydantic', 'SQL'],
+    metric: '2K+ pedidos/dia',
     color: '#7C3AED',
   },
   {
-    title: 'AI Lead Qualification Engine',
-    category: 'AI Automation',
-    desc: 'Automated lead scoring and enrichment workflow. Incoming leads are classified by Claude, enriched with Apollo data, scored, and routed to the right sales rep in HubSpot — in under 30 seconds.',
+    title: 'Motor de Qualificação de Leads com IA',
+    category: 'Automação de IA',
+    desc: 'Fluxo de trabalho automatizado de pontuação e enriquecimento de leads. Leads recebidos são classificados por Claude, enriquecidos com dados da Apollo, pontuados e roteados para o representante de vendas correto no HubSpot — em menos de 30 segundos.',
     tags: ['Claude API', 'HubSpot', 'Make', 'Apollo.io'],
     metric: '30s avg. route time',
     color: '#06B6D4',
   },
   {
-    title: 'Cross-Platform Reporting Suite',
+    title: 'Suite de Relatórios Multi-Plataforma',
     category: 'Data Pipeline',
-    desc: 'Automated weekly business reports pulling from 8 data sources — GA4, Facebook Ads, Shopify, and more — consolidated into a polished Google Slides deck sent every Monday.',
+    desc: 'Relatórios semanais de negócios automatizados extraídos de múltiplas fontes de dados — GA4, Facebook Ads, Shopify e mais — consolidados em um deck polido do Google Slides enviado toda segunda-feira.',
     tags: ['Google Workspace', 'Airtable', 'Zapier', 'Looker'],
     metric: '8 sources unified',
     color: '#9D5CF6',
   },
   {
-    title: 'SaaS Onboarding Orchestrator',
+    title: 'Orquestração de Onboarding de Clientes SaaS',
     category: 'Workflow',
-    desc: 'Complete customer onboarding automation: account provisioning, Slack workspace setup, drip emails, in-app events, and stakeholder notifications — triggered on first payment.',
+    desc: 'Automação completa de onboarding de clientes: provisionamento de contas, configuração de workspace no Slack, e-mails, eventos no aplicativo e notificações a stakeholders — acionados no primeiro pagamento.',
     tags: ['Stripe', 'Slack API', 'Intercom', 'n8n'],
     metric: '0 manual steps',
     color: '#7C3AED',
   },
   {
-    title: 'Real-Time Inventory Sync',
-    category: 'Integration',
-    desc: 'Bidirectional inventory synchronization between WooCommerce, a physical POS system, and a 3PL warehouse — keeping stock counts accurate across every channel in real time.',
+    title: 'Sincronização de Estoque em Tempo Real',
+    category: 'Integração',
+    desc: 'Sincronização bidirecional de estoque entre WooCommerce, sistema POS físico e armazém 3PL — mantendo contagens precisas em todos os canais em tempo real.',
     tags: ['WooCommerce', 'REST API', 'Webhooks', 'Make'],
-    metric: 'Real-time sync',
+    metric: 'Sincronização em tempo real',
     color: '#06B6D4',
   },
   {
-    title: 'Support Ticket Triage System',
-    category: 'AI Automation',
-    desc: 'AI-powered support triage that reads incoming Zendesk tickets, classifies urgency and department, drafts a suggested reply using Claude, and assigns to the correct agent.',
+    title: 'Sistema de Triagem de Tickets de Suporte',
+    category: 'Automação de IA',
+    desc: 'Sistema de triagem de suporte baseado em IA que lê tickets de suporte recebidos, classifica urgência e departamento, gera uma resposta sugerida usando Claude e atribui ao agente correto.',
     tags: ['Zendesk', 'Claude API', 'Slack', 'Zapier'],
     metric: '60% faster response',
     color: '#9D5CF6',
   },
 ]
 
-const categories = ['All', 'Integration', 'AI Automation', 'Data Pipeline', 'Workflow']
+const categories = ['All', 'Integração', 'Automação de IA', 'Data Pipeline', 'Workflow']
 
 export default function Projects() {
   const [active, setActive] = useState('All')
@@ -63,10 +63,10 @@ export default function Projects() {
     <section id="projects" className="projects">
       <div className="container">
         <div className="projects__header">
-          <span className="section-eyebrow">Portfolio</span>
+          <span className="section-eyebrow">Portfólio</span>
           <h2 className="projects__heading">
-            Automations built to<br />
-            <span className="gradient-text">make a difference</span>
+            Automações criadas para<br />
+            <span className="gradient-text">fazer a diferença</span>
           </h2>
         </div>
 
@@ -109,7 +109,7 @@ export default function Projects() {
               <a href="#contact" className="project-card__link">
                 View case study
                 <svg viewBox="0 0 16 16" fill="none" width="14" height="14">
-                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
             </div>

@@ -1,10 +1,10 @@
 import './About.css'
 
 const stats = [
-  { value: '50+', label: 'Automations Built' },
-  { value: '30+', label: 'Clients Helped' },
-  { value: '10k+', label: 'Hours Saved' },
-  { value: '99%', label: 'Uptime Rate' },
+  { value: '50+', label: 'Automações Construídas' },
+  { value: '30+', label: 'Clientes Atendidos' },
+  { value: '10k+', label: 'Horas Economizadas' },
+  { value: '99%', label: 'Taxa de Disponibilidade' },
 ]
 
 export default function About() {
@@ -31,7 +31,7 @@ export default function About() {
           <a href="#contact" className="btn-primary" style={{ marginTop: 28, display: 'inline-flex' }}>
             Entre em Contato
             <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </a>
         </div>

@@ -17,57 +17,56 @@ export default function Contact() {
       <div className="container contact__inner">
         {/* Left */}
         <div className="contact__text">
-          <span className="section-eyebrow">Get in touch</span>
+          <span className="section-eyebrow">Entre em Contato</span>
           <h2 className="contact__heading">
-            Ready to automate<br />
-            <span className="gradient-text">your business?</span>
+            Pronto para automatizar<br />
+            <span className="gradient-text">seu negócio?</span>
           </h2>
           <p className="contact__sub">
-            Tell me about your project. I'll get back to you within 24 hours
-            with ideas on how to tackle it.
+            Fale sobre seu projeto. Responderei em até 24 horas com ideias de como podemos resolver.
           </p>
 
           <div className="contact__channels">
-            <a href="mailto:alex@alexfoster.dev" className="contact__channel">
+            <a href="mailto:[EMAIL_ADDRESS]" className="contact__channel">
               <div className="contact__channel-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
                 </svg>
               </div>
               <div>
                 <div className="contact__channel-label">Email</div>
-                <div className="contact__channel-value">alex@alexfoster.dev</div>
+                <div className="contact__channel-value">atyladasilva@outlook.com</div>
               </div>
             </a>
 
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="contact__channel">
               <div className="contact__channel-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
-                  <circle cx="4" cy="4" r="2"/>
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                  <circle cx="4" cy="4" r="2" />
                 </svg>
               </div>
               <div>
                 <div className="contact__channel-label">LinkedIn</div>
-                <div className="contact__channel-value">linkedin.com/in/alexfoster</div>
+                <div className="contact__channel-value">https://www.linkedin.com/in/atyladasilva/</div>
               </div>
             </a>
 
-            <a href="https://calendly.com" target="_blank" rel="noreferrer" className="contact__channel">
+            {/* <a href="https://calendly.com" target="_blank" rel="noreferrer" className="contact__channel">
               <div className="contact__channel-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                  <line x1="16" y1="2" x2="16" y2="6"/>
-                  <line x1="8" y1="2" x2="8" y2="6"/>
-                  <line x1="3" y1="10" x2="21" y2="10"/>
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
                 </svg>
               </div>
               <div>
                 <div className="contact__channel-label">Book a call</div>
                 <div className="contact__channel-value">calendly.com/alexfoster</div>
               </div>
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -77,7 +76,7 @@ export default function Contact() {
             <div className="contact__success">
               <div className="contact__success-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="32" height="32">
-                  <polyline points="20 6 9 17 4 12"/>
+                  <polyline points="20 6 9 17 4 12" />
                 </svg>
               </div>
               <h3>Message sent!</h3>
@@ -114,8 +113,8 @@ export default function Contact() {
               <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
                 Send Message
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
-                  <line x1="22" y1="2" x2="11" y2="13"/>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
                 </svg>
               </button>
             </form>
