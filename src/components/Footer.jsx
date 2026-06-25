@@ -36,9 +36,8 @@ export default function Footer() {
             <h4 className="footer__col-title">Contato</h4>
             <ul>
               {[
-                { label: 'LinkedIn', href: 'https://linkedin.com' },
-                { label: 'GitHub', href: 'https://github.com' },
-                { label: 'Twitter / X', href: 'https://twitter.com' },
+                { label: 'LinkedIn', href: 'https://www.linkedin.com/in/atyladasilva' },
+                { label: 'GitHub', href: 'https://github.com/AtylaDaSilva' },
               ].map(({ label, href }) => (
                 <li key={label}><a href={href} target="_blank" rel="noreferrer">{label}</a></li>
               ))}
