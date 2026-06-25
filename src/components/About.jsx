@@ -1,9 +1,9 @@
 import './About.css'
 
 const stats = [
-  { value: '50+', label: 'Automações Construídas' },
-  { value: '30+', label: 'Clientes Atendidos' },
-  { value: '10k+', label: 'Horas Economizadas' },
+  { value: '15+', label: 'Automações Construídas' },
+  { value: '5k+', label: 'Horas Economizadas' },
+  { value: 'R$150K+', label: 'Econimizado em Custos' },
   { value: '99%', label: 'Taxa de Disponibilidade' },
 ]
 
@@ -29,12 +29,13 @@ export default function About() {
             até APIs customizadas e arquiteturas event-driven — todas planejadas para
             rodar confiavelmente, escalar sem esforço, e precisar de mínima manutenção.
           </p>
-          <a href="#contact" className="btn-primary" style={{ marginTop: 28, display: 'inline-flex' }}>
+          <a href="#contact" className="btn-primary" style={{ marginTop: 28, marginRight: 16, display: 'inline-flex' }}>
             Entre em Contato
             <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </a>
+          <a href="#about" className="btn-ghost">Ver Meu Currículo</a>
         </div>
 
         {/* Right: stats */}
