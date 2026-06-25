@@ -178,14 +178,14 @@ export default function Hero() {
           ))}
 
           {/* See how it works pill */}
-          <a href="#services" className="see-how">
+          {/* <a href="#services" className="see-how">
             <span className="see-how__play">
               <svg viewBox="0 0 10 12" fill="white" width="10" height="12">
                 <path d="M0 0L10 6L0 12V0Z"/>
               </svg>
             </span>
             <span>See how it works</span>
-          </a>
+          </a> */}
         </div>
       </div>
 
