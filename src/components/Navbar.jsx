@@ -1,7 +1,14 @@
 import { useState, useEffect } from 'react'
 import './Navbar.css'
 
-const links = ['Home', 'Sobre', 'Serviços', 'Projetos', 'Blog', 'Contato']
+const links = [
+  { link: 'Home', label: 'Home' },
+  { link: 'About', label: 'Sobre' },
+  { link: 'Services', label: 'Serviços' },
+  { link: 'Projects', label: 'Projetos' },
+  { link: 'Blog', label: 'Blog' },
+  { link: 'Contact', label: 'Contato' },
+]
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -24,11 +31,11 @@ export default function Navbar() {
           {links.map((l) => (
             <li key={l}>
               <a
-                href={`#${l.toLowerCase()}`}
-                className={`navbar__link${l === 'Home' ? ' navbar__link--active' : ''}`}
+                href={`#${l.link.toLowerCase()}`}
+                className={`navbar__link${l.link === 'Home' ? ' navbar__link--active' : ''}`}
                 onClick={() => setMenuOpen(false)}
               >
-                {l}
+                {l.label}
               </a>
             </li>
           ))}
