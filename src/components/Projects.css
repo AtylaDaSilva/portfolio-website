@@ -133,6 +133,18 @@
   gap: 6px;
 }
 
+.project-card__link-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.project-card__link-container__item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
 .project-card__link {
   display: inline-flex;
   align-items: center;
