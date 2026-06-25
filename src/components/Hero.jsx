@@ -137,7 +137,7 @@ export default function Hero() {
 
           <div className="hero__actions">
             <a href="#projects" className="btn-primary">Veja Meu Trabalho</a>
-            <a href="#contact" className="btn-ghost">Let's Work Together</a>
+            <a href="#contact" className="btn-ghost">Me Contrate</a>
           </div>
         </div>
 
