@@ -21,8 +21,7 @@ export default function About() {
           </h2>
           <p className="about__body">
             Me chamo Atyla da Silva — sou um desenvolvedor de sistemas com mais de {years} anos de experiência
-            construindo automações e integrações inteligentes. Eu conecto suas ferramentas
-            favoritas com os dados que impulsionam seu negócio.
+            construindo automações e integrações inteligentes.
           </p>
           <p className="about__body">
             Minha stack envolve tudo desde plataformas low-code como Make e Zapier
