@@ -41,9 +41,7 @@ const services = [
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="28" height="28">
-        <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6.002 6.002 0 0 0-4-5.659V5a2 2 0 1 0-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 1 1-6 0v-1m6 0H9" />
-      </svg>
+      <svg fill="#8e53e2" width="132px" height="132px" viewBox="-3.2 -3.2 22.40 22.40" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M15.35 12.81 9 2.08a1.22 1.22 0 0 0-2 0L.65 12.81a1.14 1.14 0 0 0 1 1.69h12.66a1.14 1.14 0 0 0 1.04-1.69zm-13.66.55L8 2.64l6.31 10.72z"></path><path d="M7.32 5.45h1.25V10H7.32z"></path><ellipse cx="7.95" cy="11.9" rx=".67" ry=".7"></ellipse></g></svg>
     ),
     title: 'Monitoramento e Alertas',
     desc: 'Configuro monitoramento inteligente, tratamento de erros e alertas multicanal em todos os seus sistemas de automação, para que você possa dormir tranquilo sabendo que seus pipelines funcionam 24/7.',
