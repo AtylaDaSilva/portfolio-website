@@ -1,14 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Navbar.css'
-
-const links = [
-  { link: 'Home', label: 'Home' },
-  { link: 'About', label: 'Sobre' },
-  { link: 'Services', label: 'Serviços' },
-  { link: 'Projects', label: 'Projetos' },
-  { link: 'Blog', label: 'Blog' },
-  { link: 'Contact', label: 'Contato' },
-]
+import { LINKS } from '../utils/constants'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -28,8 +20,8 @@ export default function Navbar() {
         </a>
 
         <ul className={`navbar__links${menuOpen ? ' navbar__links--open' : ''}`}>
-          {links.map((l) => (
-            <li key={l}>
+          {LINKS.map((l) => (
+            <li key={l.link}>
               <a
                 href={`#${l.link.toLowerCase()}`}
                 className={`navbar__link${l.link === 'Home' ? ' navbar__link--active' : ''}`}

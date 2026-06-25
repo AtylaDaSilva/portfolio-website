@@ -1,4 +1,5 @@
 import './Footer.css'
+import { LINKS, SERVICES } from '../utils/constants'
 
 export default function Footer() {
   return (
@@ -18,16 +19,16 @@ export default function Footer() {
           <div className="footer__col">
             <h4 className="footer__col-title">Navegação</h4>
             <ul>
-              {['Home', 'About', 'Services', 'Projects', 'Contact'].map((l) => (
-                <li key={l}><a href={`#${l.toLowerCase()}`}>{l}</a></li>
+              {LINKS.map((l) => (
+                <li key={l.link}><a href={`#${l.link.toLowerCase()}`}>{l.label}</a></li>
               ))}
             </ul>
           </div>
           <div className="footer__col">
             <h4 className="footer__col-title">Serviços</h4>
             <ul>
-              {['Workflow Automation', 'API Integrations', 'Data Pipelines', 'AI Workflows', 'Consulting'].map((s) => (
-                <li key={s}><a href="#services">{s}</a></li>
+              {SERVICES.map((s) => (
+                <li key={s.title}><a href="#services">{s.title}</a></li>
               ))}
             </ul>
           </div>
