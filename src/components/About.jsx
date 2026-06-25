@@ -8,6 +8,7 @@ const stats = [
 ]
 
 export default function About() {
+  const years = new Date().getFullYear() - 2022
   return (
     <section id="about" className="about">
       <div className="container about__inner">
@@ -19,7 +20,7 @@ export default function About() {
             <span className="gradient-text">soluções elegantes</span>
           </h2>
           <p className="about__body">
-            Me chamo Atyla da Silva — sou um desenvolvedor de sistemas com mais de 4 anos de experiência
+            Me chamo Atyla da Silva — sou um desenvolvedor de sistemas com mais de {years} anos de experiência
             construindo automações e integrações inteligentes. Eu conecto suas ferramentas
             favoritas com os dados que impulsionam seu negócio.
           </p>
