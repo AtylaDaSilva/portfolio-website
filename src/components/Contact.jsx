@@ -27,7 +27,7 @@ export default function Contact() {
           </p>
 
           <div className="contact__channels">
-            <a href="mailto:[EMAIL_ADDRESS]" className="contact__channel">
+            <a href="mailto:atyladasilva@outlook.com" className="contact__channel">
               <div className="contact__channel-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -40,7 +40,7 @@ export default function Contact() {
               </div>
             </a>
 
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="contact__channel">
+            <a href="https://www.linkedin.com/in/atyladasilva" target="_blank" rel="noreferrer" className="contact__channel">
               <div className="contact__channel-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
