@@ -86,32 +86,32 @@ export default function Contact() {
             <form className="contact__form" onSubmit={submit}>
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="name">Your name</label>
-                  <input id="name" name="name" type="text" placeholder="Alex Johnson" value={form.name} onChange={handle} required />
+                  <label htmlFor="name">Nome</label>
+                  <input id="name" name="name" type="text" placeholder="Seu Nome" value={form.name} onChange={handle} required />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="email">Email address</label>
-                  <input id="email" name="email" type="email" placeholder="alex@company.com" value={form.email} onChange={handle} required />
+                  <label htmlFor="email">E-mail</label>
+                  <input id="email" name="email" type="email" placeholder="email@outlook.com" value={form.email} onChange={handle} required />
                 </div>
               </div>
               <div className="form-group">
-                <label htmlFor="project">Project type</label>
+                <label htmlFor="project">Projeto</label>
                 <select id="project" name="project" value={form.project} onChange={handle} required>
-                  <option value="" disabled>Select a service...</option>
-                  <option>Workflow Automation</option>
-                  <option>Custom API Integration</option>
-                  <option>Data Pipeline Engineering</option>
-                  <option>AI-Powered Workflow</option>
-                  <option>Automation Consulting</option>
-                  <option>Other</option>
+                  <option value="" disabled>Selecione um serviço...</option>
+                  <option>Automação de Workflow</option>
+                  <option>Integração Com API Customizada</option>
+                  <option>Análise e Manipulação de Dados</option>
+                  <option>Workflow Impulsionado por IA</option>
+                  <option>Consultoria em Automação</option>
+                  <option>Outro</option>
                 </select>
               </div>
               <div className="form-group">
-                <label htmlFor="message">Tell me about your project</label>
-                <textarea id="message" name="message" rows="5" placeholder="Describe your current process and what you'd like to automate..." value={form.message} onChange={handle} required />
+                <label htmlFor="message">Me conte sobre seu projeto</label>
+                <textarea id="message" name="message" rows="5" placeholder="Descreva sua dor e o que gostaria de automatizar..." value={form.message} onChange={handle} required />
               </div>
               <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-                Send Message
+                Enviar Mensagem
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
                   <line x1="22" y1="2" x2="11" y2="13" />
                   <polygon points="22 2 15 22 11 13 2 9 22 2" />
