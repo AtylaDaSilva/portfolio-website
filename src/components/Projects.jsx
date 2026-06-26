@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './Projects.css'
 
 const colors = {
-  integracao: '#31ff8e'
+  integracao: '#31ff8e',
+  webApp: '#06B6D4'
 }
 
 const projects = [
@@ -16,30 +17,6 @@ const projects = [
     repo: "",
     link: "",
   },
-  // {
-  //   title: 'Motor de Qualificação de Leads com IA',
-  //   category: 'Automação de IA',
-  //   desc: 'Fluxo de trabalho automatizado de pontuação e enriquecimento de leads. Leads recebidos são classificados por Claude, enriquecidos com dados da Apollo, pontuados e roteados para o representante de vendas correto no HubSpot — em menos de 30 segundos.',
-  //   tags: ['Claude API', 'HubSpot', 'Make', 'Apollo.io'],
-  //   metric: '30s avg. route time',
-  //   color: '#06B6D4',
-  // },
-  // {
-  //   title: 'Suite de Relatórios Multi-Plataforma',
-  //   category: 'Data Pipeline',
-  //   desc: 'Relatórios semanais de negócios automatizados extraídos de múltiplas fontes de dados — GA4, Facebook Ads, Shopify e mais — consolidados em um deck polido do Google Slides enviado toda segunda-feira.',
-  //   tags: ['Google Workspace', 'Airtable', 'Zapier', 'Looker'],
-  //   metric: '8 sources unified',
-  //   color: '#9D5CF6',
-  // },
-  // {
-  //   title: 'Orquestração de Onboarding de Clientes SaaS',
-  //   category: 'Workflow',
-  //   desc: 'Automação completa de onboarding de clientes: provisionamento de contas, configuração de workspace no Slack, e-mails, eventos no aplicativo e notificações a stakeholders — acionados no primeiro pagamento.',
-  //   tags: ['Stripe', 'Slack API', 'Intercom', 'n8n'],
-  //   metric: '0 manual steps',
-  //   color: '#7C3AED',
-  // },
   {
     title: 'Sincronização de Estoque em Tempo Real',
     category: 'Integração',
@@ -50,14 +27,26 @@ const projects = [
     repo: "",
     link: "",
   },
-  // {
-  //   title: 'Sistema de Triagem de Tickets de Suporte',
-  //   category: 'Automação de IA',
-  //   desc: 'Sistema de triagem de suporte baseado em IA que lê tickets de suporte recebidos, classifica urgência e departamento, gera uma resposta sugerida usando Claude e atribui ao agente correto.',
-  //   tags: ['Zendesk', 'Claude API', 'Slack', 'Zapier'],
-  //   metric: '60% faster response',
-  //   color: '#9D5CF6',
-  // },
+  {
+    title: 'Sistema de Geração de Senhas Pseudo-Randômicas',
+    category: 'Aplicação Web',
+    desc: 'Sistema de geração de senhas seguras, com opções configuráveis, histórico de senhas geradas e um medidor de força de senha.',
+    tags: ['React', 'TypeScript', 'Bootstrap', 'Jest'],
+    metric: 'Senhas 100% seguras',
+    color: colors.webApp,
+    repo: "https://github.com/AtylaDaSilva/random-password-generator",
+    link: "https://atyladasilva.github.io/random-password-generator/"
+  },
+  {
+    title: 'Editor de Markdown do GitHub',
+    category: 'Aplicação Web',
+    desc: 'Aplicativo para edição de arquivos de Markdown com sintaxe específica do GitHub. Possui suporte a comandos básicos (negrito, itálico, etc.), imagens, links, taks lists, footnotes, tabelas e alertas.',
+    tags: ['Next.js', 'React', 'TypeScript', 'Bootstrap', 'Jest'],
+    metric: 'Monaco Editor',
+    color: colors.webApp,
+    repo: "https://github.com/AtylaDaSilva/octomark",
+    link: "https://octomark-zeta.vercel.app/"
+  },
 ]
 
 const categories = new Set([
@@ -120,14 +109,14 @@ export default function Projects() {
               <div className="project-card__link-container">
                 {p.link && (
                   <div className="project-card__link-container__item">
-                    <a href="#contact" className="project-card__link">
+                    <a href={`${p.link}`} target='_blank' className="project-card__link">
                       Visitar Projeto
                     </a>
                   </div>
                 )}
                 {p.repo && (
                   <div className="project-card__link-container__item">
-                    <a href="#contact" className="project-card__link">
+                    <a href={`${p.repo}`} target='_blank' className="project-card__link">
                       Ver Repositório
                     </a>
                   </div>
