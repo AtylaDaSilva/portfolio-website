@@ -1,6 +1,6 @@
 import './Services.css'
 import { SERVICES } from '../utils/constants.jsx'
-import HorizontalScroller from './HorizontalScroller/HorizontalScroller.jsx'
+import HorizontalScroller from './common/HorizontalScroller/HorizontalScroller.jsx'
 
 
 export default function Services() {
