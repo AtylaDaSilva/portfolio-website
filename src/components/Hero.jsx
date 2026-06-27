@@ -1,4 +1,5 @@
 import './Hero.css'
+import InfiniteMarquee from './common/InfiniteMarquee/InfiniteMarquee'
 
 /* SVG icons as inline components for zero external deps */
 const icons = [
@@ -91,6 +92,8 @@ const positions = [
   { top: '15%', right: '60%' },
   { top: '50%', right: '65%' },
 ]
+
+const tools = ['n8n', 'Make', 'Zapier', 'Airtable', 'Google Workspace', 'Gemini', 'Claude', 'OpenAI', 'Groq', 'Python', 'PHP', 'Node.js', 'API', 'Webhooks', 'React', 'Next.js', 'Tailwind', 'Figma', 'Notion', 'Trello', 'ClickUp', 'Git', 'VS Code', 'Linux', 'Docker', 'AWS',]
 
 function FloatingIcon({ icon, pos, idx }) {
   return (
@@ -192,12 +195,22 @@ export default function Hero() {
       {/* ── Trusted By strip ── */}
       <div className="tools-strip">
         <div className="container">
-          <span className="tools-strip__label">EU trabalho com</span>
-          <div className="tools-strip__logos">
-            {['n8n', 'Make', '..zapier', 'Airtable', 'Google Workspace', 'API', 'webhooks'].map((t) => (
+          <span className="tools-strip__label">Eu trabalho com</span>
+          <InfiniteMarquee
+            duration={120} 
+            pauseOnHover
+            gap="16px"
+            fadeWidth={100}
+          >
+            {tools.map((t) => (
               <span key={t} className="tools-strip__logo">{t}</span>
             ))}
-          </div>
+          </InfiniteMarquee>
+          {/* <div className="tools-strip__logos">
+            {tools.map((t) => (
+              <span key={t} className="tools-strip__logo">{t}</span>
+            ))}
+          </div> */}
         </div>
       </div>
     </section>
