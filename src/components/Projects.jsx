@@ -54,7 +54,7 @@ const projects = [
     category: 'Aplicação Web',
     desc: 'Aplicativo para edição de arquivos de Markdown com sintaxe específica do GitHub. Possui suporte a comandos básicos (negrito, itálico, etc.), imagens, links, taks lists, footnotes, tabelas e alertas.',
     tags: ['Next.js', 'React', 'TypeScript', 'Bootstrap', 'Jest'],
-    metric: 'Monaco Editor',
+    metric: 'Markdown GitHub',
     color: colors.webApp,
     repo: "https://github.com/AtylaDaSilva/octomark",
     link: "https://octomark-zeta.vercel.app/"
