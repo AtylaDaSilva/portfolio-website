@@ -4,7 +4,7 @@ import "./HorizontalScroller.css";
 export default function HorizontalScroller({
     children,
     edgeSize = 120,
-    maxScrollSpeed = 20,
+    maxScrollSpeed = 10,
     className = "",
 }) {
     const EDGE_SIZE = edgeSize;        // Área sensível nas laterais
