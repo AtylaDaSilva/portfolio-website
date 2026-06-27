@@ -50,6 +50,16 @@ const projects = [
     link: "https://atyladasilva.github.io/random-password-generator/"
   },
   {
+    title: 'Rastreio de Entregas em Tempo Real',
+    category: 'Integração',
+    desc: 'Sincronização em tempo real de entregas entre o sistema de rastreio Pathfind e o ERP Sankhya, garantindo que os status de entrega estejam sempre atualizados.',
+    tags: ['REST API', 'Python', 'SQL'],
+    metric: 'Rastreio em tempo real',
+    color: colors.integracao,
+    repo: "",
+    link: "",
+  },
+  {
     title: 'Editor de Markdown do GitHub',
     category: 'Aplicação Web',
     desc: 'Aplicativo para edição de arquivos de Markdown com sintaxe específica do GitHub. Possui suporte a comandos básicos (negrito, itálico, etc.), imagens, links, taks lists, footnotes, tabelas e alertas.',
