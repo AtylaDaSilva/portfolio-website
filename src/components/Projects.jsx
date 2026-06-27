@@ -4,7 +4,8 @@ import './Projects.css'
 
 const colors = {
   integracao: '#31ff8e',
-  webApp: '#06B6D4'
+  webApp: '#06B6D4',
+  automacao: '#e9d30d',
 }
 
 const projects = [
@@ -15,6 +16,16 @@ const projects = [
     tags: ['REST API', 'Webhooks', 'Python', 'Pydantic', 'SQL'],
     metric: '900+ pedidos/dia',
     color: colors.integracao,
+    repo: "",
+    link: "",
+  },
+  {
+    title: 'Parser de Guias de Recolhimento',
+    category: 'Automação',
+    desc: 'Automação para a leitura e extração de dados de guias de recolhimento em PDF, convertendo-os em planilhas Excel para análise e processamento posterior.',
+    tags: ['PHP', 'IMAP', 'Excel', 'PDF'],
+    metric: 'Processamento automático',
+    color: colors.automacao,
     repo: "",
     link: "",
   },
