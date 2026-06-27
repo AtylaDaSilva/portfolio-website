@@ -101,12 +101,6 @@ export default function Projects() {
               <h3 className="project-card__title">{p.title}</h3>
               <p className="project-card__desc">{p.desc}</p>
 
-              <div className="project-card__tags">
-                {p.tags.map((t) => (
-                  <span key={t} className="service-card__tag">{t}</span>
-                ))}
-              </div>
-
               <div className="project-card__link-container">
                 {p.link && (
                   <div className="project-card__link-container__item">
@@ -122,6 +116,12 @@ export default function Projects() {
                     </a>
                   </div>
                 )}
+              </div>
+
+              <div className="project-card__tags">
+                {p.tags.map((t) => (
+                  <span key={t} className="service-card__tag">{t}</span>
+                ))}
               </div>
             </div>
           ))}
