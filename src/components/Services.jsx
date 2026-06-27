@@ -1,5 +1,6 @@
 import './Services.css'
 import { SERVICES } from '../utils/constants.jsx'
+import HorizontalScroller from './HorizontalScroller/HorizontalScroller.jsx'
 
 
 export default function Services() {
@@ -17,20 +18,22 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="services__grid">
-          {SERVICES.map((s) => (
-            <div key={s.title} className="service-card">
-              <div className="service-card__icon">{s.icon}</div>
-              <h3 className="service-card__title">{s.title}</h3>
-              <p className="service-card__desc">{s.desc}</p>
-              <div className="service-card__tags">
-                {s.tags.map((tag) => (
-                  <span key={tag} className="service-card__tag">{tag}</span>
-                ))}
+        <HorizontalScroller maxScrollSpeed={20} className="services__container">
+            {SERVICES.map((s) => (
+              <div key={s.title} className="service-card">
+                <div className="service-card__header">
+                  <div className="service-card__icon">{s.icon}</div>
+                  <h3 className="service-card__title">{s.title}</h3>
+                </div>
+                <p className="service-card__desc">{s.desc}</p>
+                <div className="service-card__tags">
+                  {s.tags.map((tag) => (
+                    <span key={tag} className="service-card__tag">{tag}</span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </HorizontalScroller>
       </div>
     </section>
   )

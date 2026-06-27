@@ -1,11 +1,11 @@
 .services {
-  padding: 120px 0;
+  padding: 100px 0;
   border-top: 1px solid var(--border);
 }
 
 .services__header {
   text-align: center;
-  margin-bottom: 64px;
+  /* margin-bottom: 64px; */
 }
 
 .services__header .section-eyebrow {
@@ -30,10 +30,9 @@
 }
 
 /* Grid */
-.services__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+.services__container {
+  gap: 12px;
+  padding: 30px 0px;
 }
 
 /* Card */
@@ -41,7 +40,9 @@
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 36px 32px;
+  padding: 22px;
+  width: 330px;
+  height: 405px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -67,6 +68,13 @@
 }
 
 .service-card:hover::before { opacity: 1; }
+
+.service-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-wrap: wrap;
+}
 
 .service-card__icon {
   width: 52px;
@@ -99,7 +107,8 @@
   font-size: 14px;
   color: var(--text-secondary);
   line-height: 1.75;
-  flex: 1;
+  flex-grow: 1;
+  text-wrap: wrap;
 }
 
 .service-card__tags {
