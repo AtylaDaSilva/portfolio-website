@@ -193,7 +193,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ============================================================
    SCROLLBAR
    ============================================================ */
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-base); }
 ::-webkit-scrollbar-thumb { background: var(--violet); border-radius: 3px; }
 
