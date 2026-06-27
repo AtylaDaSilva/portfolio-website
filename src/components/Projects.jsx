@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import HorizontalScroller from './common/HorizontalScroller/HorizontalScroller'
 import './Projects.css'
 
 const colors = {
@@ -84,7 +85,7 @@ export default function Projects() {
         </div>
 
         {/* Grid */}
-        <div className="projects__grid">
+        <HorizontalScroller className="projects__container">
           {filtered.map((p) => (
             <div key={p.title} className="project-card">
               <div className="project-card__top">
@@ -124,7 +125,7 @@ export default function Projects() {
               </div>
             </div>
           ))}
-        </div>
+        </HorizontalScroller>
       </div>
     </section>
   )

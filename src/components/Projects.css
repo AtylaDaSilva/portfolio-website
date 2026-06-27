@@ -1,5 +1,5 @@
 .projects {
-  padding: 120px 0;
+  padding: 100px 0;
   border-top: 1px solid var(--border);
 }
 
@@ -22,7 +22,7 @@
   justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 48px;
+  margin-bottom: 10px;
 }
 
 .projects__tab {
@@ -48,10 +48,9 @@
 }
 
 /* Project grid */
-.projects__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+.projects__container {
+  gap: 12px;
+  padding: 30px 0px;
 }
 
 /* Project card */
@@ -59,13 +58,16 @@
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 22px;
+  width: 330px;
+  height: 405px;
   display: flex;
   flex-direction: column;
   gap: 14px;
   transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
   position: relative;
   overflow: hidden;
+  text-wrap: wrap;
 }
 
 .project-card::after {
@@ -90,6 +92,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 }
 
 .project-card__category {
@@ -162,10 +165,11 @@
   gap: 12px;
 }
 
-@media (max-width: 1024px) {
+/* ! DEPRECATED ! */
+/* @media (max-width: 1024px) {
   .projects__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 640px) {
   .projects__grid { grid-template-columns: 1fr; }
-}
+} */
