@@ -1,0 +1,10 @@
+.horizontal-scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    white-space: nowrap;
+}
+
+.horizontal-scroller > * {
+    flex-shrink: 0; /*Evita que os filhos sejam comprimidos */
+}
