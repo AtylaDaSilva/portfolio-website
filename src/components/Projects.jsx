@@ -69,6 +69,16 @@ const projects = [
     repo: "https://github.com/AtylaDaSilva/octomark",
     link: "https://octomark-zeta.vercel.app/"
   },
+  {
+    title: 'Scripts de Download de Vídeos do YouTube',
+    category: 'Automação',
+    desc: 'Scripts batch para download de vídeos do YouTube em lote, com suporte de download de playlists em múltiplos formatos e resoluções.',
+    tags: ['CLI', 'Batch',],
+    metric: 'Download em lote',
+    color: colors.automacao,
+    repo: "https://github.com/AtylaDaSilva/octomark",
+    link: "https://octomark-zeta.vercel.app/"
+  },
 ]
 
 const categories = new Set([
