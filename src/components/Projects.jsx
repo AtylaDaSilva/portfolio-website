@@ -76,8 +76,18 @@ const projects = [
     tags: ['CLI', 'Batch',],
     metric: 'Download em lote',
     color: colors.automacao,
-    repo: "https://github.com/AtylaDaSilva/octomark",
-    link: "https://octomark-zeta.vercel.app/"
+    repo: "https://github.com/AtylaDaSilva/yt-dlp-scripts",
+    link: ""
+  },
+  {
+    title: 'Webdriver para Automação de Aplicações Web',
+    category: 'Automação',
+    desc: 'Biblioteca Python para automação de aplicações web, permitindo a execução de testes automatizados e automação de processos usando o navegador web.',
+    tags: ['Python', 'Pydantic',],
+    metric: 'Production-ready',
+    color: colors.automacao,
+    repo: "https://github.com/AtylaDaSilva/python-webdriver",
+    link: ""
   },
 ]
 
