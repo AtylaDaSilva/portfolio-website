@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser';
 import './Contact.css'
 
 export default function Contact() {
@@ -9,7 +10,24 @@ export default function Contact() {
 
   const submit = (e) => {
     e.preventDefault()
-    setSent(true)
+    emailjs
+    .send(
+      import.meta.env.VITE_MENSAGERIA_SERVICE_ID,
+      import.meta.env.VITE_MENSAGERIA_TEMPLATE_ID,
+      { ...form, time: new Date().toLocaleString('pt-BR') },
+      { publicKey: import.meta.env.VITE_MENSAGERIA_PUBLIC_KEY }
+    )
+    .then(
+      (response) => {
+        if (response.status === 200) {
+          setSent(true)
+          setForm({ name: '', email: '', project: '', message: '' })
+        }
+      },
+      (error) => {
+        console.error('Erro ao enviar mensagem: ', error);
+      },
+    );
   }
 
   return (
@@ -23,7 +41,7 @@ export default function Contact() {
             <span className="gradient-text">seu negócio?</span>
           </h2>
           <p className="contact__sub">
-            Fale sobre seu projeto. Responderei em até 24 horas com ideias de como podemos resolver.
+            Me conte sobre seu projeto. Responderei em até 24 horas com ideias de como posso te ajudar.
           </p>
 
           <div className="contact__channels">
@@ -52,21 +70,6 @@ export default function Contact() {
                 <div className="contact__channel-value">https://www.linkedin.com/in/atyladasilva/</div>
               </div>
             </a>
-
-            {/* <a href="https://calendly.com" target="_blank" rel="noreferrer" className="contact__channel">
-              <div className="contact__channel-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-              </div>
-              <div>
-                <div className="contact__channel-label">Book a call</div>
-                <div className="contact__channel-value">calendly.com/alexfoster</div>
-              </div>
-            </a> */}
           </div>
         </div>
 
@@ -79,8 +82,8 @@ export default function Contact() {
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
               </div>
-              <h3>Message sent!</h3>
-              <p>I'll be in touch within 24 hours. Talk soon!</p>
+              <h3>Mensagem enviada!</h3>
+              <p>Entrarei em contato dentro de 24 horas. Até logo!</p>
             </div>
           ) : (
             <form className="contact__form" onSubmit={submit}>
