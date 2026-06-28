@@ -1,4 +1,5 @@
 import './About.css'
+import DownloadCVButton from './common/DownloadCVButton/DownloadCVButton'
 
 const stats = [
   { value: '15+', label: 'Automações Construídas' },
@@ -34,7 +35,7 @@ export default function About() {
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </a>
-          <a href="#about" className="btn-ghost">Ver Meu Currículo</a>
+          <DownloadCVButton />
         </div>
 
         {/* Right: stats */}

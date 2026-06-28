@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Navbar.css'
 import { LINKS } from '../utils/constants'
+import DownloadCVButton from './common/DownloadCVButton/DownloadCVButton'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -33,9 +34,12 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href="#contact" className="btn-primary navbar__cta">
-          Vamos Conversar
-        </a>
+        <div>
+          <DownloadCVButton />
+          <a href="#contact" className="btn-primary navbar__cta">
+            Vamos Conversar
+          </a>
+        </div>
 
         <button
           className="navbar__burger"

@@ -1,5 +1,6 @@
 import './Hero.css'
 import InfiniteMarquee from './common/InfiniteMarquee/InfiniteMarquee'
+import DownloadCVButton from './common/DownloadCVButton/DownloadCVButton'
 
 /* SVG icons as inline components for zero external deps */
 const icons = [
@@ -140,7 +141,7 @@ export default function Hero() {
 
           <div className="hero__actions">
             <a href="#projects" className="btn-primary">Veja Meu Trabalho</a>
-            <a href="#contact" className="btn-ghost">Me Contrate</a>
+            <DownloadCVButton />
           </div>
         </div>
 
@@ -179,16 +180,6 @@ export default function Hero() {
           {icons.map((icon, i) => (
             <FloatingIcon key={icon.name} icon={icon} pos={positions[i]} idx={i} />
           ))}
-
-          {/* See how it works pill */}
-          {/* <a href="#services" className="see-how">
-            <span className="see-how__play">
-              <svg viewBox="0 0 10 12" fill="white" width="10" height="12">
-                <path d="M0 0L10 6L0 12V0Z"/>
-              </svg>
-            </span>
-            <span>See how it works</span>
-          </a> */}
         </div>
       </div>
 
@@ -206,11 +197,6 @@ export default function Hero() {
               <span key={t} className="tools-strip__logo">{t}</span>
             ))}
           </InfiniteMarquee>
-          {/* <div className="tools-strip__logos">
-            {tools.map((t) => (
-              <span key={t} className="tools-strip__logo">{t}</span>
-            ))}
-          </div> */}
         </div>
       </div>
     </section>
