@@ -1,15 +1,18 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser';
+import Spinner from './common/Spinner/Spinner'
 import './Contact.css'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', project: '', message: '' })
+  const [showSpinner, setShowSpinner] = useState(false)
   const [sent, setSent] = useState(false)
 
   const handle = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
   const submit = (e) => {
     e.preventDefault()
+    setShowSpinner(true)
     emailjs
     .send(
       import.meta.env.VITE_MENSAGERIA_SERVICE_ID,
@@ -23,12 +26,24 @@ export default function Contact() {
           setSent(true)
           setForm({ name: '', email: '', project: '', message: '' })
         }
+        setShowSpinner(false)
       },
       (error) => {
         console.error('Erro ao enviar mensagem: ', error);
+        setShowSpinner(false)
       },
     );
   }
+
+  const originalFormBtnContent = (
+    <>
+      Enviar Mensagem
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
+        <line x1="22" y1="2" x2="11" y2="13" />
+        <polygon points="22 2 15 22 11 13 2 9 22 2" />
+      </svg>
+    </>
+  )
 
   return (
     <section id="contact" className="contact">
@@ -114,11 +129,8 @@ export default function Contact() {
                 <textarea id="message" name="message" rows="5" placeholder="Descreva sua dor e o que gostaria de automatizar..." value={form.message} onChange={handle} required />
               </div>
               <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-                Enviar Mensagem
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
-                  <line x1="22" y1="2" x2="11" y2="13" />
-                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                </svg>
+                { !showSpinner && (originalFormBtnContent) }
+                { showSpinner && (<Spinner size={24} color='#f1f5f9'/>) }
               </button>
             </form>
           )}
