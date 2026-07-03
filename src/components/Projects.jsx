@@ -89,6 +89,16 @@ const projects = [
     repo: "https://github.com/AtylaDaSilva/python-webdriver",
     link: ""
   },
+  {
+    title: 'Compass - Sistema de Gestão de Finanças Pessoais',
+    category: 'Aplicação Web',
+    desc: 'Sistema de gestão de finanças pessoais, com funcionalidades para controle de receitas, despesas e orçamentos.',
+    tags: ['Next.js', 'React', 'TypeScript', 'Bootstrap',],
+    metric: 'Work-In-Progress',
+    color: colors.webApp,
+    repo: "https://github.com/AtylaDaSilva/compass",
+    link: "https://compass-finances.netlify.app/"
+  },
 ]
 
 const categories = new Set([
