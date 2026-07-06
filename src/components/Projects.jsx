@@ -107,7 +107,7 @@ const projects = [
     metric: 'Work-In-Progress',
     color: colors.webApp,
     repo: "https://github.com/AtylaDaSilva/product-scraper",
-    link: "skusnatcher.netlify.app"
+    link: "https://skusnatcher.netlify.app"
   },
 ]
 
