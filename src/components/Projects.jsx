@@ -99,6 +99,16 @@ const projects = [
     repo: "https://github.com/AtylaDaSilva/compass",
     link: "https://compass-finances.netlify.app/"
   },
+  {
+    title: 'SKU Snatcher - Sistema de Scraping de E-Commerce',
+    category: 'Aplicação Web',
+    desc: 'Sistema de scraping de e-commerce, com funcionalidades para monitoramento de produtos, preços e disponibilidade em tempo real.',
+    tags: ['Next.js', 'React', 'TypeScript', 'Bootstrap',],
+    metric: 'Work-In-Progress',
+    color: colors.webApp,
+    repo: "https://github.com/AtylaDaSilva/product-scraper",
+    link: "skusnatcher.netlify.app"
+  },
 ]
 
 const categories = new Set([
