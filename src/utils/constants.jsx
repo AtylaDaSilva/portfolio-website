@@ -6,6 +6,8 @@ export const LINKS = [
   { link: 'Contact', label: 'Contact' },
 ]
 
+export const PHONE = "5585986113558";
+
 export const SERVICES = [
   {
     icon: (

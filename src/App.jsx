@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import WhatsAppButton from './components/common/WhatsappButton/WhatsappButton'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   )
 }
