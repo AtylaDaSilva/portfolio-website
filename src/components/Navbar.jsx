@@ -37,7 +37,7 @@ export default function Navbar() {
         <div>
           <DownloadCVButton />
           <a href="#contact" className="btn-primary navbar__cta">
-            Vamos Conversar
+            Hire Me
           </a>
         </div>
 

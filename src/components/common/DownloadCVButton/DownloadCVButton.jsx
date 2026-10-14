@@ -7,7 +7,7 @@ export default function DownloadCVButton() {
             className="download-cv-button"
             download
         >
-            Meu Currículo
+            My CV
         </a>
     )
 }

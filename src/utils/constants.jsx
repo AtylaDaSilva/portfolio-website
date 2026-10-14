@@ -1,10 +1,9 @@
 export const LINKS = [
   { link: 'Home', label: 'Home' },
-  { link: 'About', label: 'Sobre' },
-  { link: 'Services', label: 'Serviços' },
-  { link: 'Projects', label: 'Projetos' },
-  { link: 'Blog', label: 'Blog' },
-  { link: 'Contact', label: 'Contato' },
+  { link: 'About', label: 'About Me' },
+  { link: 'Services', label: 'Services' },
+  { link: 'Projects', label: 'Portfolio' },
+  { link: 'Contact', label: 'Contact' },
 ]
 
 export const SERVICES = [
