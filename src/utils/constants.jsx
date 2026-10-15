@@ -7,6 +7,7 @@ export const LINKS = [
 ]
 
 export const PHONE = "5585986113558";
+export const PHONE_F = "+55 (85) 98611-3558";
 
 export const SERVICES = [
   {
