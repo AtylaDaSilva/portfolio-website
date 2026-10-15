@@ -8,14 +8,13 @@ export default function Services() {
     <section id="services" className="services">
       <div className="container">
         <div className="services__header">
-          <span className="section-eyebrow">O Que Eu Faço</span>
+          <span className="section-eyebrow">What I Do</span>
           <h2 className="services__heading">
-            Serviços construídos em torno da<br />
-            <span className="gradient-text">sua stack</span>
+            Translation services to help you<br/><span className="gradient-text">reach your audience</span>.
           </h2>
-          <p className="services__sub">
+          {/* <p className="services__sub">
             Eu conecto suas ferramentas favoritas com os dados que impulsionam seu negócio.
-          </p>
+          </p> */}
         </div>
 
         <HorizontalScroller maxScrollSpeed={20} className="services__container">
