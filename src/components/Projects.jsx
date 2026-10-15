@@ -3,132 +3,61 @@ import HorizontalScroller from './common/HorizontalScroller/HorizontalScroller'
 import './Projects.css'
 
 const colors = {
-  integracao: '#31ff8e',
-  webApp: '#06B6D4',
-  automacao: '#e9d30d',
+  translation: '#31ff8e',
+  localization: '#06B6D4',
+  
 }
 
 const projects = [
   {
-    title: 'Integração de Pedidos E-Commerce',
-    category: 'Integração',
-    desc: 'Pipeline bi-directional de integração de pedidos conectando o hub de Marketplaces Plugg.To a um sistema ERP. Processa mais de 900 pedidos por dia sem intervenção manual.',
-    tags: ['REST API', 'Webhooks', 'Python', 'Pydantic', 'SQL'],
-    metric: '900+ pedidos/dia',
-    color: colors.integracao,
+    title: 'General Photography Contract',
+    category: 'Translation',
+    desc: 'English to Portuguese translation of a generic template for a Photography services contract.',
+    tags: ['Translation','English', 'Portuguese', 'Contract'],
+    metric: '',
+    color: colors.translation,
     repo: "",
-    link: "",
+    link: "https://drive.google.com/drive/folders/1f6UjXVhB512rsp2wWoMQcS8_ancgZXtw?usp=sharing",
   },
   {
-    title: 'Parser de Guias de Recolhimento',
-    category: 'Automação',
-    desc: 'Automação para a leitura e extração de dados de guias de recolhimento em PDF, convertendo-os em planilhas Excel para análise e processamento posterior.',
-    tags: ['PHP', 'IMAP', 'Excel', 'PDF'],
-    metric: 'Processamento automático',
-    color: colors.automacao,
+    title: 'University Course Certificate',
+    category: 'Translation',
+    desc: 'Portuguese to English translation of a certificate for a Course at a local State University.',
+    tags: ['Translation','Portuguese', 'English', 'Certificate'],
+    metric: '',
+    color: colors.translation,
     repo: "",
-    link: "",
+    link: "https://drive.google.com/drive/folders/1oDgIT6EBNxj28aeI6EcofSwxHohAu8dp?usp=sharing",
   },
   {
-    title: 'Sincronização de Estoque em Tempo Real',
-    category: 'Integração',
-    desc: 'Sincronização bi-direcional de estoque entre WMS LinkedBy e ERP Sankhya — mantendo contagens precisas em todos os canais em tempo real.',
-    tags: ['REST API', 'Python', 'SQL'],
-    metric: 'Sincronização em tempo real',
-    color: colors.integracao,
-    repo: "",
-    link: "",
-  },
-  {
-    title: 'Sistema de Geração de Senhas Pseudo-Randômicas',
-    category: 'Aplicação Web',
-    desc: 'Sistema de geração de senhas seguras, com opções configuráveis, histórico de senhas geradas e um medidor de força de senha.',
-    tags: ['React', 'TypeScript', 'Bootstrap', 'Jest'],
-    metric: 'Senhas 100% seguras',
-    color: colors.webApp,
-    repo: "https://github.com/AtylaDaSilva/random-password-generator",
-    link: "https://atyladasilva.github.io/random-password-generator/"
-  },
-  {
-    title: 'Rastreio de Entregas em Tempo Real',
-    category: 'Integração',
-    desc: 'Sincronização em tempo real de entregas entre o sistema de rastreio Pathfind e o ERP Sankhya, garantindo que os status de entrega estejam sempre atualizados.',
-    tags: ['REST API', 'Python', 'SQL'],
-    metric: 'Rastreio em tempo real',
-    color: colors.integracao,
-    repo: "",
-    link: "",
-  },
-  {
-    title: 'Editor de Markdown do GitHub',
-    category: 'Aplicação Web',
-    desc: 'Aplicativo para edição de arquivos de Markdown com sintaxe específica do GitHub. Possui suporte a comandos básicos (negrito, itálico, etc.), imagens, links, taks lists, footnotes, tabelas e alertas.',
-    tags: ['Next.js', 'React', 'TypeScript', 'Bootstrap', 'Jest'],
-    metric: 'Markdown GitHub',
-    color: colors.webApp,
-    repo: "https://github.com/AtylaDaSilva/octomark",
-    link: "https://octomark-zeta.vercel.app/"
-  },
-  {
-    title: 'Scripts de Download de Vídeos do YouTube',
-    category: 'Automação',
-    desc: 'Scripts batch para download de vídeos do YouTube em lote, com suporte de download de playlists em múltiplos formatos e resoluções.',
-    tags: ['CLI', 'Batch',],
-    metric: 'Download em lote',
-    color: colors.automacao,
-    repo: "https://github.com/AtylaDaSilva/yt-dlp-scripts",
-    link: ""
-  },
-  {
-    title: 'Webdriver para Automação de Aplicações Web',
-    category: 'Automação',
-    desc: 'Biblioteca Python para automação de aplicações web, permitindo a execução de testes automatizados e automação de processos usando o navegador web.',
-    tags: ['Python', 'Pydantic',],
-    metric: 'Production-ready',
-    color: colors.automacao,
-    repo: "https://github.com/AtylaDaSilva/python-webdriver",
-    link: ""
-  },
-  {
-    title: 'Compass - Sistema de Gestão de Finanças Pessoais',
-    category: 'Aplicação Web',
-    desc: 'Sistema de gestão de finanças pessoais, com funcionalidades para controle de receitas, despesas e orçamentos.',
-    tags: ['Next.js', 'React', 'TypeScript', 'Bootstrap',],
-    metric: 'Work-In-Progress',
-    color: colors.webApp,
-    repo: "https://github.com/AtylaDaSilva/compass",
-    link: "https://compass-finances.netlify.app/"
-  },
-  {
-    title: 'SKU Snatcher - Sistema de Scraping de E-Commerce',
-    category: 'Aplicação Web',
-    desc: 'Sistema de scraping de e-commerce, com funcionalidades para monitoramento de produtos, preços e disponibilidade em tempo real.',
-    tags: ['Next.js', 'React', 'TypeScript', 'Bootstrap',],
-    metric: 'Work-In-Progress',
-    color: colors.webApp,
-    repo: "https://github.com/AtylaDaSilva/product-scraper",
-    link: "https://skusnatcher.netlify.app"
+    title: 'Fast Food Website Localization',
+    category: 'Localization',
+    desc: 'Full localization of a Fast Food website, directly inside the source HTML code.',
+    tags: ['Localization','English', 'Portuguese', 'Website', 'HTML'],
+    metric: '',
+    color: colors.localization,
+    repo: "https://github.com/AtylaDaSilva/mock_fastfood_restaurant_website",
+    link: "https://atyladasilva.github.io/mock_fastfood_restaurant_website/",
   },
 ]
 
 const categories = new Set([
-  "Todas",
+  "All",
   ...projects.map((p) => p.category)
 ])
 
 export default function Projects() {
-  const [active, setActive] = useState('Todas')
+  const [active, setActive] = useState('All')
 
-  const filtered = active === 'Todas' ? projects : projects.filter((p) => p.category === active)
+  const filtered = active === 'All' ? projects : projects.filter((p) => p.category === active)
 
   return (
     <section id="projects" className="projects">
       <div className="container">
         <div className="projects__header">
-          <span className="section-eyebrow">Portfólio</span>
+          <span className="section-eyebrow">My Portfolio</span>
           <h2 className="projects__heading">
-            Automações criadas para<br />
-            <span className="gradient-text">fazer a diferença</span>
+            Let my <span className="gradient-text">actions</span> speak louder than my words.
           </h2>
         </div>
 
@@ -166,14 +95,14 @@ export default function Projects() {
                 {p.link && (
                   <div className="project-card__link-container__item">
                     <a href={`${p.link}`} target='_blank' className="project-card__link">
-                      Visitar Projeto
+                      Go To Project
                     </a>
                   </div>
                 )}
                 {p.repo && (
                   <div className="project-card__link-container__item">
                     <a href={`${p.repo}`} target='_blank' className="project-card__link">
-                      Ver Repositório
+                      Go To Repository
                     </a>
                   </div>
                 )}
