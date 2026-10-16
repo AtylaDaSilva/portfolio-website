@@ -22,5 +22,29 @@
         "p1": "I'm Atyla (pronounced Ah-tee-lah) — I am a self-taught linguist from Brazil and I like studying foreign languages as a hobby.",
         "p2": "I started learning English when I was a teenager, not through any kind of formal education, but by simply watching <emphasis>way</emphasis> too much YouTube and playing Video-Games. Today, I am completely fluent in English.",
         "p3": "Currently, I'm studying Japanese and German. I also know a little bit of Russian. I want to be as fluent in these languages as I am now in English."
+    },
+    "services": {
+        "eyebrow": "What I Do",
+        "header": "Translation services to help you<breakline/><highlight>reach your audience</highlight>.",
+        "translation": {
+            "title": "Translation & Localization",
+            "description": "I translate Documents, E-books, Websites, Video-Games, Technical Documentation, and whatever else you need translated.",
+            "tags": ["English", "Portuguese"]
+        },
+        "proofreading": {
+            "title": "Proofreading",
+            "description": "Already got something translated, but you're not sure if it's grammatically and syntactically cohesive, or even if it is logically coherent? I can Proofread anything for you and help you get your ideas across in a professional and natural-sounding manner.",
+            "tags": ["English", "Portuguese"]
+        },
+        "captioning": {
+            "title": "Video Captioning",
+            "description": "Want your YouTube, TikTok, or Instagram videos to reach an overseas audience? I can caption your videos in both English and Portuguese",
+            "tags": ["English", "Portuguese"]
+        },
+        "interpreting": {
+            "title": "Interpreting",
+            "description": "Got a Video call booked with a client, but can't speak a word of their language? I can interpret your conversation live, in real time.",
+            "tags": ["English", "Portuguese"]
+        }
     }
 }

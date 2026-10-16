@@ -22,5 +22,29 @@
         "p1": "Me chamo Atyla — Eu sou um linguista autodidata nativo do Brasil e eu gosto de estudar línguas estrangeiras no meu tempo livre.",
         "p2": "Eu iniciei meus estudos na língua Inglesa em minha adolescência, não por meio de nenhuma educação formal mas simplesmente assistindo quantidades <emphasis>absurdas</emphasis> de YouTube e jogando Video-Games. Hoje eu sou completamente fluente em Inglês.",
         "p3": "Atualmente, estou estudando Japonês e Alemão. Também sei um pouco de Russo. Pretendo um dia ser fluente nessas línguas, assim como já sou em Inglês."
+    },
+    "services": {
+        "eyebrow": "O Que Eu Faço",
+        "header": "Serviços de tradução para ajudar você<breakline/><highlight>a alcançar seu público</highlight>.",
+        "translation": {
+            "title": "Tradução e Localização",
+            "description": "Traduzo documentos, E-books, websites, video-games, documentação técnica e qualquer outro conteúdo que você precise traduzir.",
+            "tags": ["Inglês", "Português"]
+        },
+        "proofreading": {
+            "title": "Revisão de Textos",
+            "description": "Já tem um texto traduzido mas não tem certeza se ele está gramaticamente e sintaticamente coeso, ou mesmo se faz sentido do ponto de vista lógico? Posso revisar qualquer texto e ajudar você a transmitir suas ideias de maneira profissional e natural.",
+            "tags": ["Inglês", "Português"]
+        },
+        "captioning": {
+            "title": "Legendagem de Vídeos",
+            "description": "Quer que seus vídeos do YouTube, TikTok ou Instagram alcancem um público internacional? Posso legendar seus vídeos tanto em inglês quanto em português.",
+            "tags": ["Inglês", "Português"]
+        },
+        "interpreting": {
+            "title": "Interpretação",
+            "description": "Tem uma videochamada agendada com um cliente, mas não fala uma palavra do idioma dele? Posso interpretar sua conversa ao vivo, em tempo real.",
+            "tags": ["Inglês", "Português"]
+        }
     }
 }
