@@ -2,8 +2,10 @@ import { useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Spinner from './common/Spinner/Spinner'
 import './Contact.css'
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function Contact() {
+  const { t, i18n } = useTranslation();
   const [form, setForm] = useState({ name: '', email: '', project: '', message: '' })
   const [showSpinner, setShowSpinner] = useState(false)
   const [sent, setSent] = useState(false)
@@ -37,7 +39,7 @@ export default function Contact() {
 
   const originalFormBtnContent = (
     <>
-      Send Message
+      {t("contact.form_send_btn")}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
         <line x1="22" y1="2" x2="11" y2="13" />
         <polygon points="22 2 15 22 11 13 2 9 22 2" />
@@ -50,12 +52,15 @@ export default function Contact() {
       <div className="container contact__inner">
         {/* Left */}
         <div className="contact__text">
-          <span className="section-eyebrow">Get In Touch</span>
+          <span className="section-eyebrow">{t("contact.form_send_btn")}</span>
           <h2 className="contact__heading">
-            Ready to expand your projects to an <span className="gradient-text">overseas audience</span>?
+            <Trans
+              i18nKey="contact.header"
+              components={{ highlight: <span className="gradient-text" /> }}
+            />
           </h2>
           <p className="contact__sub">
-            Send me and E-mail or contact me over on WhatsApp or LinkedIn. I'll respond in under 24 hours.
+            {t("contact.subtext")}
           </p>
 
           <div className="contact__channels">
@@ -67,7 +72,7 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <div className="contact__channel-label">My E-mail</div>
+                <div className="contact__channel-label">{t("contact.email_label")}</div>
                 <div className="contact__channel-value">atyladasilva@outlook.com</div>
               </div>
             </a>
@@ -96,15 +101,15 @@ export default function Contact() {
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
               </div>
-              <h3>Message Sent!</h3>
-              <p>I'll be in touch as quickly as possible. See you soon!</p>
+              <h3>{t("contact.message_sent_header")}</h3>
+              <p>{t("contact.message_sent_body")}</p>
             </div>
           ) : (
             <form className="contact__form" onSubmit={submit}>
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input id="name" name="name" type="text" placeholder="Your Name" value={form.name} onChange={handle} required />
+                  <label htmlFor="name">{t("contact.form_name")}</label>
+                  <input id="name" name="name" type="text" placeholder={t("contact.form_name_placeholder")} value={form.name} onChange={handle} required />
                 </div>
                 <div className="form-group">
                   <label htmlFor="email">E-mail</label>
@@ -112,19 +117,16 @@ export default function Contact() {
                 </div>
               </div>
               <div className="form-group">
-                <label htmlFor="project">Service</label>
+                <label htmlFor="project">{t("contact.form_services_label")}</label>
                 <select id="project" name="project" value={form.project} onChange={handle} required>
-                  <option value="" disabled>Choose a service...</option>
-                  <option>Translation & Localization</option>
-                  <option>Proofreading</option>
-                  <option>Video Captioning</option>
-                  <option>Interpreting</option>
-                  <option>Other</option>
+                  {
+                    t("contact.form_services", { returnObjects: true }).map((s) => (<option>{s}</option>))
+                  }
                 </select>
               </div>
               <div className="form-group">
-                <label htmlFor="message">Tell me more about your project</label>
-                <textarea id="message" name="message" rows="5" placeholder="Get me up to speed on how I can help your project." value={form.message} onChange={handle} required />
+                <label htmlFor="message">{t("contact.form_textarea_label")}</label>
+                <textarea id="message" name="message" rows="5" placeholder={t("contact.form_textarea_placeholder")} value={form.message} onChange={handle} required />
               </div>
               <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
                 { !showSpinner && (originalFormBtnContent) }

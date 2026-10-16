@@ -71,5 +71,27 @@
             "desc": "Localização completa de um site de fast food, diretamente no código-fonte HTML.",
             "tags": ["Localização", "Inglês", "Português", "Site", "HTML"]
         }
+    },
+    "contact": {
+        "eyebrow": "Entre em Contato",
+        "header": "Pronto para expandir seus projetos para um <highlight>público internacional</highlight>?",
+        "subtext": "Me Envie um e-mail ou mande uma mensagem pelo WhatsApp ou LinkedIn. Eu respondo em menos de 24 horas.",
+        "email_label": "Meu e-mail",
+        "message_sent_header": "Mensagem Enviada!",
+        "message_sent_body": "Entrarei em contato o mais breve possível. Até logo!",
+        "form_name": "Nome",
+        "form_name_placeholder": "Seu Nome",
+        "form_textarea_label": "Me conta mais sobre seu projeto",
+        "form_textarea_placeholder": "Como posso ajudar com seu projeto?",
+        "form_services_label": "Serviço",
+        "form_services": [
+            "Escolha um serviço...",
+            "Tradução e Localização",
+            "Revisão de Textos",
+            "Legendagem de Vídeos",
+            "Interpretação",
+            "Outro"
+        ],
+        "form_send_btn": "Enviar Mensagem"
     }
 }
