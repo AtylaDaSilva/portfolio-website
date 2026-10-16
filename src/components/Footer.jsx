@@ -1,7 +1,9 @@
 import './Footer.css'
 import { LINKS, SERVICES, PHONE_F } from '../utils/constants'
+import { useTranslation, Trans } from 'react-i18next'
 
 export default function Footer() {
+  const { t, i18n } = useTranslation();
   return (
     <footer className="footer">
       <div className="container footer__inner">
@@ -17,23 +19,23 @@ export default function Footer() {
 
         <div className="footer__links">
           <div className="footer__col">
-            <h4 className="footer__col-title">Content</h4>
+            <h4 className="footer__col-title">{t("footer.content")}</h4>
             <ul>
               {LINKS.map((l) => (
-                <li key={l.link}><a href={`#${l.link.toLowerCase()}`}>{l.label}</a></li>
+                <li key={l.link}><a href={`#${t(l.link).toLowerCase()}`}>{t(l.label)}</a></li>
               ))}
             </ul>
           </div>
           <div className="footer__col">
-            <h4 className="footer__col-title">Services</h4>
+            <h4 className="footer__col-title">{t("footer.services")}</h4>
             <ul>
               {SERVICES.map((s) => (
-                <li key={s.title}><a href="#services">{s.title}</a></li>
+                <li key={s.title}><a href="#services">{t(s.title)}</a></li>
               ))}
             </ul>
           </div>
           <div className="footer__col">
-            <h4 className="footer__col-title">Contact</h4>
+            <h4 className="footer__col-title">{t("footer.contact")}</h4>
             <ul>
               {[
                 { label: 'LinkedIn', href: 'https://www.linkedin.com/in/atyladasilva' },
@@ -48,9 +50,9 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <span className="footer__copy">© {new Date().getFullYear()} Atyla da Silva. All rights reserved.</span>
+          <span className="footer__copy">© {new Date().getFullYear()} Atyla da Silva. {t("footer.copyright")}</span>
           <span className="footer__built">
-            Made with 💜 by me, {' '}
+            {`${t("footer.made_by")} `}
             <span style={{ color: 'var(--violet-light)' }}>Atyla da Silva</span>
           </span>
         </div>

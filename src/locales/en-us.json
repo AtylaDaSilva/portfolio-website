@@ -93,5 +93,12 @@
             "Other"
         ],
         "form_send_btn": "Send Message"
+    },
+    "footer": {
+        "content": "Content",
+        "services": "Services",
+        "contact": "Contact",
+        "copyright": "All rights reserved.",
+        "made_by": "Made with 💜 by me,"
     }
 }

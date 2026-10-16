@@ -93,5 +93,12 @@
             "Outro"
         ],
         "form_send_btn": "Enviar Mensagem"
+    },
+    "footer": {
+        "content": "Conteúdo",
+        "services": "Serviços",
+        "contact": "Contato",
+        "copyright": "Todos os direitos reservados.",
+        "made_by": "Feito com 💜 por mim,"
     }
 }
