@@ -46,5 +46,30 @@
             "description": "Got a Video call booked with a client, but can't speak a word of their language? I can interpret your conversation live, in real time.",
             "tags": ["English", "Portuguese"]
         }
+    },
+    "projects": {
+        "eyebrow": "My Portfolio",
+        "header": "Let my <highlight>actions</highlight> speak louder than my words.",
+        "category_all": "All",
+        "link_title_project": "Go To Project",
+        "link_title_repo": "Go To Repository",
+        "p1": {
+            "title": "General Photography Contract",
+            "category": "Translation",
+            "desc": "English to Portuguese translation of a generic template for a Photography services contract.",
+            "tags": ["Translation","English", "Portuguese", "Contract"]
+        },
+        "p2": {
+            "title": "University Course Certificate",
+            "category": "Translation",
+            "desc": "Portuguese to English translation of a certificate for a Course at a local State University.",
+            "tags": ["Translation","Portuguese", "English", "Certificate"]
+        },
+        "p3": {
+            "title": "Fast Food Website Localization",
+            "category": "Localization",
+            "desc": "Full localization of a Fast Food website, directly inside the source HTML code.",
+            "tags": ["Localization","English", "Portuguese", "Website", "HTML"]
+        }
     }
 }

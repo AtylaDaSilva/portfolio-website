@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import HorizontalScroller from './common/HorizontalScroller/HorizontalScroller'
 import './Projects.css'
+import { useTranslation, Trans } from 'react-i18next'
 
 const colors = {
   translation: '#31ff8e',
@@ -10,30 +11,30 @@ const colors = {
 
 const projects = [
   {
-    title: 'General Photography Contract',
-    category: 'Translation',
-    desc: 'English to Portuguese translation of a generic template for a Photography services contract.',
-    tags: ['Translation','English', 'Portuguese', 'Contract'],
+    title: 'projects.p1.title',
+    category: 'projects.p1.category',
+    desc: 'projects.p1.desc',
+    tags: 'projects.p1.tags',
     metric: '',
     color: colors.translation,
     repo: "",
     link: "https://drive.google.com/drive/folders/1f6UjXVhB512rsp2wWoMQcS8_ancgZXtw?usp=sharing",
   },
   {
-    title: 'University Course Certificate',
-    category: 'Translation',
-    desc: 'Portuguese to English translation of a certificate for a Course at a local State University.',
-    tags: ['Translation','Portuguese', 'English', 'Certificate'],
+    title: 'projects.p2.title',
+    category: 'projects.p2.category',
+    desc: 'projects.p2.desc',
+    tags: 'projects.p2.tags',
     metric: '',
     color: colors.translation,
     repo: "",
     link: "https://drive.google.com/drive/folders/1oDgIT6EBNxj28aeI6EcofSwxHohAu8dp?usp=sharing",
   },
   {
-    title: 'Fast Food Website Localization',
-    category: 'Localization',
-    desc: 'Full localization of a Fast Food website, directly inside the source HTML code.',
-    tags: ['Localization','English', 'Portuguese', 'Website', 'HTML'],
+    title: 'projects.p3.title',
+    category: 'projects.p3.category',
+    desc: 'projects.p3.desc',
+    tags: 'projects.p3.tags',
     metric: '',
     color: colors.localization,
     repo: "https://github.com/AtylaDaSilva/mock_fastfood_restaurant_website",
@@ -41,23 +42,32 @@ const projects = [
   },
 ]
 
-const categories = new Set([
-  "All",
-  ...projects.map((p) => p.category)
-])
-
 export default function Projects() {
-  const [active, setActive] = useState('All')
+  const { t, i18n } = useTranslation();
 
-  const filtered = active === 'All' ? projects : projects.filter((p) => p.category === active)
+  const all_category = t("projects.category_all")
+
+  const categories = new Set([
+    all_category,
+    ...projects.map((p) => t(p.category, { returnObjects: true }))
+  ])
+
+  const [active, setActive] = useState(all_category)
+
+  const filtered = active === all_category ? projects : projects.filter((p) => t(p.category) === active)
 
   return (
     <section id="projects" className="projects">
       <div className="container">
         <div className="projects__header">
-          <span className="section-eyebrow">My Portfolio</span>
+          <span className="section-eyebrow">{t("projects.eyebrow")}</span>
           <h2 className="projects__heading">
-            Let my <span className="gradient-text">actions</span> speak louder than my words.
+            {
+              <Trans
+                i18nKey="projects.header"
+                components={{ highlight: <span className="gradient-text" /> }}
+              />
+            }
           </h2>
         </div>
 
@@ -83,33 +93,33 @@ export default function Projects() {
                   className="project-card__category"
                   style={{ '--cat-color': p.color }}
                 >
-                  {p.category}
+                  {t(p.category)}
                 </span>
                 <span className="project-card__metric">{p.metric}</span>
               </div>
 
-              <h3 className="project-card__title">{p.title}</h3>
-              <p className="project-card__desc">{p.desc}</p>
+              <h3 className="project-card__title">{t(p.title)}</h3>
+              <p className="project-card__desc">{t(p.desc)}</p>
 
               <div className="project-card__link-container">
                 {p.link && (
                   <div className="project-card__link-container__item">
                     <a href={`${p.link}`} target='_blank' className="project-card__link">
-                      Go To Project
+                      {t("projects.link_title_project")}
                     </a>
                   </div>
                 )}
                 {p.repo && (
                   <div className="project-card__link-container__item">
                     <a href={`${p.repo}`} target='_blank' className="project-card__link">
-                      Go To Repository
+                      {t("projects.link_title_repo")}
                     </a>
                   </div>
                 )}
               </div>
 
               <div className="project-card__tags">
-                {p.tags.map((t) => (
+                {t(p.tags, { returnObjects: true }).map((t) => (
                   <span key={t} className="service-card__tag">{t}</span>
                 ))}
               </div>

@@ -46,5 +46,30 @@
             "description": "Tem uma videochamada agendada com um cliente, mas não fala uma palavra do idioma dele? Posso interpretar sua conversa ao vivo, em tempo real.",
             "tags": ["Inglês", "Português"]
         }
+    },
+    "projects": {
+        "eyebrow": "Meu portfólio",
+        "header": "Deixe minhas <highlight>ações</highlight> falarem mais alto que minhas palavras.",
+        "category_all": "Todos",
+        "link_title_project": "Acessar Projeto",
+        "link_title_repo": "Acessar Repositório",
+        "p1": {
+            "title": "Contrato de Serviços Fotográficos",
+            "category": "Tradução",
+            "desc": "Tradução do Inglês para o Português de um modelo genérico de contrato de prestação de serviços fotográficos.",
+            "tags": ["Tradução", "Inglês", "Português", "Contrato"]
+        },
+        "p2": {
+            "title": "Certificado de Conclusão de Curso Universitário",
+            "category": "Tradução",
+            "desc": "Tradução do Português para o Inglês de um certificado de conclusão de curso de uma universidade estadual local.",
+            "tags": ["Tradução", "Português", "Inglês", "Certificado"]
+        },
+        "p3": {
+            "title": "Localização de Site de Fast Food",
+            "category": "Localização",
+            "desc": "Localização completa de um site de fast food, diretamente no código-fonte HTML.",
+            "tags": ["Localização", "Inglês", "Português", "Site", "HTML"]
+        }
     }
 }
