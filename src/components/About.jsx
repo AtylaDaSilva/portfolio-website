@@ -42,7 +42,7 @@ export default function About() {
 
         {/* Right: stats */}
         <div className="about__stats">
-          <Avatar src="src/img/profile_pic_001.jpg" name="Atyla" size={300} borderColor="var(--violet)" />
+          <Avatar src="img/profile_pic_001.jpg" name="Atyla" size={300} borderColor="var(--violet)" />
           {/* {stats.map(({ value, label }) => (
             <div key={label} className="stat-card">
               <span className="stat-card__value gradient-text">{value}</span>
