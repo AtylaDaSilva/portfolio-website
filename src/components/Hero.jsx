@@ -1,6 +1,7 @@
 import './Hero.css'
 import InfiniteMarquee from './common/InfiniteMarquee/InfiniteMarquee'
 import DownloadCVButton from './common/DownloadCVButton/DownloadCVButton'
+import { useTranslation, Trans } from 'react-i18next'
 
 /* SVG icons as inline components for zero external deps */
 const icons = [
@@ -104,6 +105,8 @@ function FloatingIcon({ icon, pos, idx }) {
 }
 
 export default function Hero() {
+  const { t, i18n } = useTranslation();
+
   return (
     <section id="home" className="hero">
       {/* Background radial glows */}
@@ -113,15 +116,17 @@ export default function Hero() {
       <div className="container hero__inner">
         {/* ── LEFT: Text ── */}
         <div className="hero__content">
-          <span className="section-eyebrow">English ↔ Brazilian Portuguese Translation & Interpreting</span>
+          <span className="section-eyebrow">{t("hero.eyebrow")}</span>
 
           <h1 className="hero__headline">
-            {/* Eu construo automações que <span className="gradient-text">economizam tempo</span> e <span className="gradient-text">geram resultados.</span> */}
-            <span className="gradient-text">Breaking</span> Language Barriers, <span className="gradient-text">Connecting</span> People
+            <Trans
+              i18nKey="hero.header"
+              components={{ highlight: <span className="gradient-text" /> }}
+            />
           </h1>
 
           <p className="hero__sub">
-            I provide accurate, natural, and culturally adapted English–Brazilian Portuguese translation and interpreting services, helping individuals and businesses communicate clearly and confidently across languages. With a software engineering background and over 10 years of English language study, I bring a detail-oriented approach to every project.
+            {t("hero.subtext")}
           </p>
 
           <div className="hero__actions">

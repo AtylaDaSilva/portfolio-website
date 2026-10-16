@@ -1,9 +1,9 @@
 export const LINKS = [
-  { link: 'Home', label: 'Home' },
-  { link: 'About', label: 'About Me' },
-  { link: 'Services', label: 'Services' },
-  { link: 'Projects', label: 'Portfolio' },
-  { link: 'Contact', label: 'Contact' },
+  { link: 'Home', label: "links.home" },
+  { link: 'About', label: "links.about" },
+  { link: 'Services', label: "links.services" },
+  { link: 'Projects', label: "links.projects" },
+  { link: 'Contact', label: "links.contact" },
 ]
 
 export const PHONE = "5585986113558";

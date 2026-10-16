@@ -1,0 +1,18 @@
+{
+    "links": {
+        "home": "Home",
+        "about": "About Me",
+        "services": "Services",
+        "projects": "Portfolio",
+        "contact": "Contact"
+    },
+    "buttons": {
+        "cta": "Hire Me",
+        "cv": "My CV"
+    },
+    "hero": {
+        "eyebrow": "English ↔ Brazilian Portuguese Translation & Interpreting",
+        "header": "<highlight>Breaking</highlight> Language Barriers, <highlight>Connecting</highlight> People",
+        "subtext": "I provide accurate, natural, and culturally adapted English–Brazilian Portuguese translation and interpreting services, helping individuals and businesses communicate clearly and confidently across languages. With a software engineering background and over 10 years of English language study, I bring a detail-oriented approach to every project."
+    }
+}

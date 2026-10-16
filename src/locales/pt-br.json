@@ -1,0 +1,18 @@
+{
+    "links": {
+        "home": "Home",
+        "about": "Sobre Mim",
+        "services": "Serviços",
+        "projects": "Portfólio",
+        "contact": "Contato"
+    },
+    "buttons": {
+        "cta": "Me Contrate",
+        "cv": "Meu CV"
+    },
+    "hero": {
+        "eyebrow": "Tradução & Interpretação em Inglês ↔ Português",
+        "header": "<highlight>Quebrando</highlight> Barreiras Linguísticas, <highlight>Conectando</highlight> Pessoas",
+        "subtext": "Eu ofereço servicos de tradução e interpretação em Inglês–Português acurado, natural e culturalmente adaptado que ajudam indivíduos e empresas a se comunicarem em outros idiomas de maneira clara e consisa. Com mais de 10 anos de estudo da Língua Inglesa e com um background no ramo da Engenharia de Software, eu trago uma abordagem precisa e orientada a detalhes em cada projeto."
+    }
+}
