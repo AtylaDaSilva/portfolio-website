@@ -8,11 +8,19 @@
     },
     "buttons": {
         "cta": "Hire Me",
-        "cv": "My CV"
+        "cv": "My CV",
+        "git": "Get In Touch"
     },
     "hero": {
         "eyebrow": "English ↔ Brazilian Portuguese Translation & Interpreting",
         "header": "<highlight>Breaking</highlight> Language Barriers, <highlight>Connecting</highlight> People",
         "subtext": "I provide accurate, natural, and culturally adapted English–Brazilian Portuguese translation and interpreting services, helping individuals and businesses communicate clearly and confidently across languages. With a software engineering background and over 10 years of English language study, I bring a detail-oriented approach to every project."
+    },
+    "about": {
+        "eyebrow": "About Me",
+        "header": "I'm a <highlight>self-taught</highlight> linguist.",
+        "p1": "I'm Atyla (pronounced Ah-tee-lah) — I am a self-taught linguist from Brazil and I like studying foreign languages as a hobby.",
+        "p2": "I started learning English when I was a teenager, not through any kind of formal education, but by simply watching <emphasis>way</emphasis> too much YouTube and playing Video-Games. Today, I am completely fluent in English.",
+        "p3": "Currently, I'm studying Japanese and German. I also know a little bit of Russian. I want to be as fluent in these languages as I am now in English."
     }
 }
