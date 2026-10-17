@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './Navbar.css'
 import { LINKS } from '../utils/constants'
 import DownloadCVButton from './common/DownloadCVButton/DownloadCVButton'
+import LanguageSwitcher from './common/LanguageSwitcher/LanguageSwitcher'
 import { useTranslation } from 'react-i18next'
 
 export default function Navbar() {
@@ -36,15 +37,12 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div>
+        <div className="navbar__actions">
           <DownloadCVButton />
           <a href="#contact" className="btn-primary navbar__cta">
             {t("buttons.cta")}
           </a>
-          <div>
-            <button className="btn-primary" onClick={() => i18n.changeLanguage("en_us")}>EN</button>
-            <button className="btn-primary" onClick={() => i18n.changeLanguage("pt_br")}>PT</button>
-          </div>
+          <LanguageSwitcher />
         </div>
 
         <button

@@ -22,6 +22,15 @@
   gap: 48px;
 }
 
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  /* gap: 12px; */
+  margin-left: auto;
+  position: fixed;
+  right: 2%;
+}
+
 /* Logo */
 .navbar__logo {
   flex-shrink: 0;
@@ -101,6 +110,14 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .navbar__inner {
+    gap: 16px;
+  }
+
+  .navbar__actions {
+    gap: 8px;
+  }
+
   .navbar__links {
     display: none;
     position: absolute;
@@ -127,6 +144,11 @@
 
   .navbar__cta {
     display: none;
+  }
+
+  .navbar__actions .download-cv-button {
+    padding: 9px 10px;
+    font-size: 12px;
   }
 
   .navbar__burger {
