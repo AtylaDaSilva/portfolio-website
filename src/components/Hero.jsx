@@ -130,7 +130,7 @@ export default function Hero() {
           </p>
 
           <div className="hero__actions">
-            <a href="#projects" className="btn-primary">My Work</a>
+            <a href="#projects" className="btn-primary">{t("buttons.work")}</a>
             <DownloadCVButton />
           </div>
         </div>
