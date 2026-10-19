@@ -26,54 +26,94 @@
         "p3": "Também tenho conhecimentos na construção de Relatórios Dinâmicos com PowerBI, Excel e etc.",
         "p4": "O meu inglês é fluente e tenho afinidade com documentação e código limpo e legível."
     },
-    "services": {
-        "eyebrow": "O Que Eu Faço",
-        "header": "Serviços de tradução para ajudar você<breakline/><highlight>a alcançar seu público</highlight>.",
-        "translation": {
-            "title": "Tradução e Localização",
-            "description": "Traduzo documentos, E-books, websites, video-games, documentação técnica e qualquer outro conteúdo que você precise traduzir.",
-            "tags": ["Inglês", "Português"]
-        },
-        "proofreading": {
-            "title": "Revisão de Textos",
-            "description": "Já tem um texto traduzido mas não tem certeza se ele está gramaticamente e sintaticamente coeso, ou mesmo se faz sentido do ponto de vista lógico? Posso revisar qualquer texto e ajudar você a transmitir suas ideias de maneira profissional e natural.",
-            "tags": ["Inglês", "Português"]
-        },
-        "captioning": {
-            "title": "Legendagem de Vídeos",
-            "description": "Quer que seus vídeos do YouTube, TikTok ou Instagram alcancem um público internacional? Posso legendar seus vídeos tanto em inglês quanto em português.",
-            "tags": ["Inglês", "Português"]
-        },
-        "interpreting": {
-            "title": "Interpretação",
-            "description": "Tem uma videochamada agendada com um cliente, mas não fala uma palavra do idioma dele? Posso interpretar sua conversa ao vivo, em tempo real.",
-            "tags": ["Inglês", "Português"]
-        }
-    },
     "projects": {
         "eyebrow": "Meu portfólio",
         "header": "Deixe minhas <highlight>ações</highlight> falarem mais alto que minhas palavras.",
-        "category_all": "Todos",
-        "link_title_project": "Acessar Projeto",
-        "link_title_repo": "Acessar Repositório",
-        "p1": {
-            "title": "Contrato de Serviços Fotográficos",
-            "category": "Tradução",
-            "desc": "Tradução do Inglês para o Português de um modelo genérico de contrato de prestação de serviços fotográficos.",
-            "tags": ["Tradução", "Inglês", "Português", "Contrato"]
-        },
-        "p2": {
-            "title": "Certificado de Conclusão de Curso Universitário",
-            "category": "Tradução",
-            "desc": "Tradução do Português para o Inglês de um certificado de conclusão de curso de uma universidade estadual local.",
-            "tags": ["Tradução", "Português", "Inglês", "Certificado"]
-        },
-        "p3": {
-            "title": "Localização de Site de Fast Food",
-            "category": "Localização",
-            "desc": "Localização completa de um site de fast food, diretamente no código-fonte HTML.",
-            "tags": ["Localização", "Inglês", "Português", "Site", "HTML"]
-        }
+        "master_category": "Todas",
+        "link_label": "Acessar Projeto",
+        "repo_label": "Repositório",
+        "list": [
+            {
+                "title": "Integração de Pedidos E-Commerce",
+                "category": "Integração",
+                "desc": "Pipeline bi-directional de integração de pedidos conectando o hub de Marketplaces Plugg.To a um sistema ERP. Processa mais de 900 pedidos por dia sem intervenção manual.",
+                "tags": ["REST API", "Webhooks", "Python", "Pydantic", "SQL"],
+                "metric": "900+ pedidos integrados",
+                "color": "integracao",
+                "repo": "",
+                "link": ""
+            },
+            {
+                "title": "Parser de Guias de Recolhimento",
+                "category": "Automação",
+                "desc": "Automação para a leitura e extração de dados de guias de recolhimento em PDF, convertendo-os em planilhas Excel para análise e processamento posterior.",
+                "tags": ["PHP", "IMAP", "Excel", "PDF"],
+                "metric": "Processamento automático",
+                "color": "automacao",
+                "repo": "",
+                "link": ""
+            },
+            {
+                "title": "Sincronização de Estoque em Tempo Real",
+                "category": "Integração",
+                "desc": "Sincronização bi-direcional de estoque entre WMS LinkedBy e ERP Sankhya — mantendo contagens precisas em todos os canais em tempo real.",
+                "tags": ["REST API", "Python", "SQL"],
+                "metric": "Sincronização em tempo real",
+                "color": "integracao",
+                "repo": "",
+                "link": ""
+            },
+            {
+                "title": "Sistema de Geração de Senhas Pseudo-Randômicas",
+                "category": "Aplicação Web",
+                "desc": "Sistema de geração de senhas seguras, com opções configuráveis, histórico de senhas geradas e um medidor de força de senha.",
+                "tags": ["React", "TypeScript", "Bootstrap", "Jest"],
+                "metric": "Senhas 100% seguras",
+                "color": "webApp",
+                "repo": "https://github.com/AtylaDaSilva/random-password-generator",
+                "link": "https://atyladasilva.github.io/random-password-generator/"
+            },
+            {
+                "title": "Rastreio de Entregas em Tempo Real",
+                "category": "Integração",
+                "desc": "Sincronização em tempo real de entregas entre o sistema de rastreio Pathfind e o ERP Sankhya, garantindo que os status de entrega estejam sempre atualizados.",
+                "tags": ["REST API", "Python", "SQL"],
+                "metric": "Rastreio em tempo real",
+                "color": "integracao",
+                "repo": "",
+                "link": ""
+            },
+            {
+                "title": "Editor de Markdown do GitHub",
+                "category": "Aplicação Web",
+                "desc": "Aplicativo para edição de arquivos de Markdown com sintaxe específica do GitHub. Possui suporte a comandos básicos (negrito, itálico, etc.), imagens, links, taks lists, footnotes, tabelas e alertas.",
+                "tags": ["Next.js", "React", "TypeScript", "Bootstrap", "Jest"],
+                "metric": "Markdown GitHub",
+                "color": "webApp",
+                "repo": "https://github.com/AtylaDaSilva/octomark",
+                "link": "https://octomark-zeta.vercel.app/"
+            },
+            {
+                "title": "Scripts de Download de Vídeos do YouTube",
+                "category": "Automação",
+                "desc": "Scripts batch para download de vídeos do YouTube em lote, com suporte de download de playlists em múltiplos formatos e resoluções.",
+                "tags": ["CLI", "Batch"],
+                "metric": "Download em lote",
+                "color": "automacao",
+                "repo": "https://github.com/AtylaDaSilva/yt-dlp-scripts",
+                "link": ""
+            },
+            {
+                "title": "Webdriver para Automação de Aplicações Web",
+                "category": "Automação",
+                "desc": "Biblioteca Python para automação de aplicações web, permitindo a execução de testes automatizados e automação de processos usando o navegador web.",
+                "tags": ["Python", "Pydantic"],
+                "metric": "Production-ready",
+                "color": "automacao",
+                "repo": "https://github.com/AtylaDaSilva/python-webdriver",
+                "link": ""
+            }
+        ]
     },
     "contact": {
         "eyebrow": "Entre em Contato",

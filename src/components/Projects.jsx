@@ -4,57 +4,26 @@ import './Projects.css'
 import { useTranslation, Trans } from 'react-i18next'
 
 const colors = {
-  translation: '#31ff8e',
-  localization: '#06B6D4',
-  
+  integracao: '#31ff8e',
+  webApp: '#06B6D4',
+  automacao: '#e9d30d',
 }
-
-const projects = [
-  {
-    title: 'projects.p1.title',
-    category: 'projects.p1.category',
-    desc: 'projects.p1.desc',
-    tags: 'projects.p1.tags',
-    metric: '',
-    color: colors.translation,
-    repo: "",
-    link: "https://drive.google.com/drive/folders/1f6UjXVhB512rsp2wWoMQcS8_ancgZXtw?usp=sharing",
-  },
-  {
-    title: 'projects.p2.title',
-    category: 'projects.p2.category',
-    desc: 'projects.p2.desc',
-    tags: 'projects.p2.tags',
-    metric: '',
-    color: colors.translation,
-    repo: "",
-    link: "https://drive.google.com/drive/folders/1oDgIT6EBNxj28aeI6EcofSwxHohAu8dp?usp=sharing",
-  },
-  {
-    title: 'projects.p3.title',
-    category: 'projects.p3.category',
-    desc: 'projects.p3.desc',
-    tags: 'projects.p3.tags',
-    metric: '',
-    color: colors.localization,
-    repo: "https://github.com/AtylaDaSilva/mock_fastfood_restaurant_website",
-    link: "https://atyladasilva.github.io/mock_fastfood_restaurant_website/",
-  },
-]
 
 export default function Projects() {
   const { t, i18n } = useTranslation();
+  const [active, setActive] = useState('Todas')
 
-  const all_category = t("projects.category_all")
+  const projects = t("projects.list", { returnObjects: true })
 
   const categories = new Set([
-    all_category,
-    ...projects.map((p) => t(p.category, { returnObjects: true }))
-  ])
+  t("projects.master_category"),  // "All" category
+  ...projects.map((p) => p.category)
+])
 
-  const [active, setActive] = useState(all_category)
+  //TEMP - Until I fix the category filtering bug
+  // const filtered = active === 'Todas' ? projects : projects.filter((p) => p.category === active)
+  const filtered = projects
 
-  const filtered = active === all_category ? projects : projects.filter((p) => t(p.category) === active)
 
   return (
     <section id="projects" className="projects">
@@ -91,7 +60,7 @@ export default function Projects() {
               <div className="project-card__top">
                 <span
                   className="project-card__category"
-                  style={{ '--cat-color': p.color }}
+                  style={{ '--cat-color': colors[p.color] }}
                 >
                   {t(p.category)}
                 </span>
@@ -105,23 +74,21 @@ export default function Projects() {
                 {p.link && (
                   <div className="project-card__link-container__item">
                     <a href={`${p.link}`} target='_blank' className="project-card__link">
-                      {t("projects.link_title_project")}
+                      {t("projects.link_label")}
                     </a>
                   </div>
                 )}
                 {p.repo && (
                   <div className="project-card__link-container__item">
                     <a href={`${p.repo}`} target='_blank' className="project-card__link">
-                      {t("projects.link_title_repo")}
+                      {t("projects.repo_label")}
                     </a>
                   </div>
                 )}
               </div>
 
               <div className="project-card__tags">
-                {t(p.tags, { returnObjects: true }).map((t) => (
-                  <span key={t} className="service-card__tag">{t}</span>
-                ))}
+                {p.tags.map((tag) => <span key={tag} className="service-card__tag">{tag}</span>)}
               </div>
             </div>
           ))}

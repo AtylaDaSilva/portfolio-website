@@ -26,54 +26,94 @@
         "p3": "I'm also skilled in building Dynamic Reports with Power BI, Excel, and more.",
         "p4": "My English is fluent, and I have a strong affinity for documentation and clean, readable code."
     },
-    "services": {
-        "eyebrow": "What I Do",
-        "header": "Translation services to help you<breakline/><highlight>reach your audience</highlight>.",
-        "translation": {
-            "title": "Translation & Localization",
-            "description": "I translate Documents, E-books, Websites, Video-Games, Technical Documentation, and whatever else you need translated.",
-            "tags": ["English", "Portuguese"]
-        },
-        "proofreading": {
-            "title": "Proofreading",
-            "description": "Already got something translated, but you're not sure if it's grammatically and syntactically cohesive, or even if it is logically coherent? I can Proofread anything for you and help you get your ideas across in a professional and natural-sounding manner.",
-            "tags": ["English", "Portuguese"]
-        },
-        "captioning": {
-            "title": "Video Captioning",
-            "description": "Want your YouTube, TikTok, or Instagram videos to reach an overseas audience? I can caption your videos in both English and Portuguese",
-            "tags": ["English", "Portuguese"]
-        },
-        "interpreting": {
-            "title": "Interpreting",
-            "description": "Got a Video call booked with a client, but can't speak a word of their language? I can interpret your conversation live, in real time.",
-            "tags": ["English", "Portuguese"]
-        }
-    },
     "projects": {
         "eyebrow": "My Portfolio",
         "header": "Let my <highlight>actions</highlight> speak louder than my words.",
-        "category_all": "All",
-        "link_title_project": "Go To Project",
-        "link_title_repo": "Go To Repository",
-        "p1": {
-            "title": "General Photography Contract",
-            "category": "Translation",
-            "desc": "English to Portuguese translation of a generic template for a Photography services contract.",
-            "tags": ["Translation","English", "Portuguese", "Contract"]
-        },
-        "p2": {
-            "title": "University Course Certificate",
-            "category": "Translation",
-            "desc": "Portuguese to English translation of a certificate for a Course at a local State University.",
-            "tags": ["Translation","Portuguese", "English", "Certificate"]
-        },
-        "p3": {
-            "title": "Fast Food Website Localization",
-            "category": "Localization",
-            "desc": "Full localization of a Fast Food website, directly inside the source HTML code.",
-            "tags": ["Localization","English", "Portuguese", "Website", "HTML"]
-        }
+        "master_category": "All",
+        "link_label": "Go To Project",
+        "repo_label": "Repository",
+        "list": [
+            {
+                "title": "E-Commerce Order Integration",
+                "category": "Integration",
+                "desc": "Bi-directional order integration pipeline connecting the Plugg.To Marketplace hub to an ERP system. Processes over 900 orders per day with no manual intervention.",
+                "tags": ["REST API", "Webhooks", "Python", "Pydantic", "SQL"],
+                "metric": "900+ orders integrated",
+                "color": "integracao",
+                "repo": "",
+                "link": ""
+            },
+            {
+                "title": "Payment Slip Parser",
+                "category": "Automation",
+                "desc": "Automation for reading and extracting data from PDF payment slips, converting them into Excel spreadsheets for further analysis and processing.",
+                "tags": ["PHP", "IMAP", "Excel", "PDF"],
+                "metric": "Automatic processing",
+                "color": "automacao",
+                "repo": "",
+                "link": ""
+            },
+            {
+                "title": "Real-Time Inventory Sync",
+                "category": "Integration",
+                "desc": "Bi-directional inventory sync between the LinkedBy WMS and the Sankhya ERP — keeping counts accurate across all channels in real time.",
+                "tags": ["REST API", "Python", "SQL"],
+                "metric": "Real-time sync",
+                "color": "integracao",
+                "repo": "",
+                "link": ""
+            },
+            {
+                "title": "Pseudo-Random Password Generator",
+                "category": "Web App",
+                "desc": "Secure password generation system with configurable options, a history of generated passwords, and a password strength meter.",
+                "tags": ["React", "TypeScript", "Bootstrap", "Jest"],
+                "metric": "100% secure passwords",
+                "color": "webApp",
+                "repo": "https://github.com/AtylaDaSilva/random-password-generator",
+                "link": "https://atyladasilva.github.io/random-password-generator/"
+            },
+            {
+                "title": "Real-Time Delivery Tracking",
+                "category": "Integration",
+                "desc": "Real-time delivery sync between the Pathfind tracking system and the Sankhya ERP, ensuring delivery statuses are always up to date.",
+                "tags": ["REST API", "Python", "SQL"],
+                "metric": "Real-time tracking",
+                "color": "integracao",
+                "repo": "",
+                "link": ""
+            },
+            {
+                "title": "GitHub Markdown Editor",
+                "category": "Web App",
+                "desc": "Application for editing Markdown files with GitHub-flavored syntax. Supports basic commands (bold, italic, etc.), images, links, task lists, footnotes, tables, and alerts.",
+                "tags": ["Next.js", "React", "TypeScript", "Bootstrap", "Jest"],
+                "metric": "GitHub Markdown",
+                "color": "webApp",
+                "repo": "https://github.com/AtylaDaSilva/octomark",
+                "link": "https://octomark-zeta.vercel.app/"
+            },
+            {
+                "title": "YouTube Video Download Scripts",
+                "category": "Automation",
+                "desc": "Batch scripts for bulk downloading YouTube videos, with support for downloading playlists in multiple formats and resolutions.",
+                "tags": ["CLI", "Batch"],
+                "metric": "Batch download",
+                "color": "automacao",
+                "repo": "https://github.com/AtylaDaSilva/yt-dlp-scripts",
+                "link": ""
+            },
+            {
+                "title": "Webdriver for Web Application Automation",
+                "category": "Automation",
+                "desc": "Python library for web application automation, enabling automated testing and process automation using the web browser.",
+                "tags": ["Python", "Pydantic"],
+                "metric": "Production-ready",
+                "color": "automacao",
+                "repo": "https://github.com/AtylaDaSilva/python-webdriver",
+                "link": ""
+            }
+        ]
     },
     "contact": {
         "eyebrow": "Get In Touch",
