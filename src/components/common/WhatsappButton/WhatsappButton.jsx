@@ -23,7 +23,7 @@ export default function WhatsAppButton({
     return () => window.removeEventListener("scroll", onScroll);
   }, [showAfter]);
 
-  const href = `https://wa.me/${PHONE.replace(/\D/g, "")}?text=${encodeURIComponent("Olá, gostaria de saber mais sobre seus serviços de Tradução/Intéprete.")}`;
+  const href = `https://wa.me/${PHONE.replace(/\D/g, "")}?`;
 
   return (
     <>
