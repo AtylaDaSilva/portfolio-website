@@ -1,7 +1,7 @@
 export const LINKS = [
   { link: 'Home', label: "links.home" },
   { link: 'About', label: "links.about" },
-  { link: 'Services', label: "links.services" },
+  // { link: 'Services', label: "links.services" },
   { link: 'Projects', label: "links.projects" },
   { link: 'Contact', label: "links.contact" },
 ]

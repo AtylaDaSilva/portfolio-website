@@ -26,14 +26,14 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className="footer__col">
+          {/* <div className="footer__col">
             <h4 className="footer__col-title">{t("footer.services")}</h4>
             <ul>
               {SERVICES.map((s) => (
                 <li key={s.title}><a href="#services">{t(s.title)}</a></li>
               ))}
             </ul>
-          </div>
+          </div> */}
           <div className="footer__col">
             <h4 className="footer__col-title">{t("footer.contact")}</h4>
             <ul>
