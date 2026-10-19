@@ -7,15 +7,15 @@
         "contact": "Contato"
     },
     "buttons": {
-        "cta": "Me Contrate",
+        "cta": "Entre Em Contato",
         "cv": "Meu CV",
         "work": "Meu Trabalho",
         "git": "Entre Em Contato"
     },
     "hero": {
-        "eyebrow": "Tradução & Interpretação em Inglês ↔ Português",
-        "header": "<highlight>Quebrando</highlight> Barreiras Linguísticas, <highlight>Conectando</highlight> Pessoas",
-        "subtext": "Eu ofereço servicos de tradução e interpretação em Inglês–Português acurado, natural e culturalmente adaptado que ajudam indivíduos e empresas a se comunicarem em outros idiomas de maneira clara e consisa. Com mais de 10 anos de estudo da Língua Inglesa e com um background no ramo da Engenharia de Software, eu trago uma abordagem precisa e orientada a detalhes em cada projeto."
+        "eyebrow": "Desenvolvimento Back-End",
+        "header": "Soluções inteligentes que geram <highlight>resultados</highlight>.",
+        "subtext": "Sou um Analista de Sistemas e Desenvolvedor Back-End especializado na construção de Automações e Serviços de alta disponibilidade."
     },
     "about": {
         "eyebrow": "Sobre Mim",
