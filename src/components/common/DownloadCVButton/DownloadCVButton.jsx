@@ -6,7 +6,7 @@ export default function DownloadCVButton() {
 
     return (
         <a
-            href="Atyla da Silva - CV - EN_PT.zip"
+            href="Atyla da Silva - CV PT_BR - EN_US.zip"
             className="download-cv-button"
             download
         >
