@@ -11,19 +11,21 @@ const colors = {
 
 export default function Projects() {
   const { t, i18n } = useTranslation();
-  const [active, setActive] = useState('Todas')
 
   const projects = t("projects.list", { returnObjects: true })
 
+  const masterCategory = t("projects.master_category")  // "All" category
+
   const categories = new Set([
-  t("projects.master_category"),  // "All" category
-  ...projects.map((p) => p.category)
-])
+    masterCategory,
+    ...projects.map((p) => p.category)
+  ])
 
-  //TEMP - Until I fix the category filtering bug
-  // const filtered = active === 'Todas' ? projects : projects.filter((p) => p.category === active)
-  const filtered = projects
+  // Categories will be filtered through it's index
+  const catIndexes = Array.from(categories.values())
 
+  const [active, setActive] = useState(0)
+  const filtered = active === catIndexes.indexOf(masterCategory) ? projects : projects.filter((p) => catIndexes.indexOf(p.category) === active)
 
   return (
     <section id="projects" className="projects">
@@ -42,11 +44,11 @@ export default function Projects() {
 
         {/* Filter tabs */}
         <div className="projects__tabs">
-          {[...categories].map((c) => (
+          {[...catIndexes].map((c, idx) => (
             <button
               key={c}
-              className={`projects__tab${active === c ? ' projects__tab--active' : ''}`}
-              onClick={() => setActive(c)}
+              className={`projects__tab${active === idx ? ' projects__tab--active' : ''}`}
+              onClick={() => setActive(idx)}
             >
               {c}
             </button>
