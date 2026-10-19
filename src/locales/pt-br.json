@@ -15,7 +15,8 @@
     "hero": {
         "eyebrow": "Desenvolvimento Back-End",
         "header": "Soluções inteligentes que geram <highlight>resultados</highlight>.",
-        "subtext": "Sou um Analista de Sistemas e Desenvolvedor Back-End especializado na construção de Automações e Serviços de alta disponibilidade."
+        "subtext": "Sou um Analista de Sistemas e Desenvolvedor Back-End especializado na construção de Automações e Serviços de alta disponibilidade.",
+        "marquee_label": "Eu Trablaho Com"
     },
     "about": {
         "eyebrow": "Sobre Mim",

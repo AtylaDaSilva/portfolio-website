@@ -15,7 +15,8 @@
     "hero": {
         "eyebrow": "Back-End Development",
         "header": "Smart solutions that deliver <highlight>results</highlight>.",
-        "subtext": "I am a Systems Analyst and Back-End Developer specialized in building highly-available Automations and Services."
+        "subtext": "I am a Systems Analyst and Back-End Developer specialized in building highly-available Automations and Services.",
+        "marquee_label": "I Work With"
     },
     "about": {
         "eyebrow": "About Me",

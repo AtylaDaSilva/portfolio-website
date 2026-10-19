@@ -176,7 +176,7 @@ export default function Hero() {
       {/* ── Trusted By strip ── */}
       <div className="tools-strip">
         <div className="container">
-          <span className="tools-strip__label">Eu trabalho com</span>
+          <span className="tools-strip__label">{t("hero.marquee_label")}</span>
           <InfiniteMarquee
             duration={120} 
             pauseOnHover
