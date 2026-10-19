@@ -20,10 +20,11 @@
     },
     "about": {
         "eyebrow": "Sobre Mim",
-        "header": "Eu sou um linguista <highlight>autodidata</highlight>.",
-        "p1": "Me chamo Atyla — Eu sou um linguista autodidata nativo do Brasil e eu gosto de estudar línguas estrangeiras no meu tempo livre.",
-        "p2": "Eu iniciei meus estudos na língua Inglesa em minha adolescência, não por meio de nenhuma educação formal mas simplesmente assistindo quantidades <emphasis>absurdas</emphasis> de YouTube e jogando Video-Games. Hoje eu sou completamente fluente em Inglês.",
-        "p3": "Atualmente, estou estudando Japonês e Alemão. Também sei um pouco de Russo. Pretendo um dia ser fluente nessas línguas, assim como já sou em Inglês."
+        "header": "Eu sou um <highlight>Desenvolvedor</highlight>.",
+        "p1": "Me chamo Atyla — Eu sou um primariamente um desenvolvedor Back-End, mas tenho ampla experiência trabalhando com ferramentas e frameworks no Front-End.",
+        "p2": "Eu sou formado em Análise e Desenvolvimento de Sistemas e me especializo em na criação de Automações, APIs REST, Serviços, Integrações com Software de Terceiros e Gerenciamento de Banco de Dados.",
+        "p3": "Também tenho conhecimentos na construção de Relatórios Dinâmicos com PowerBI, Excel e etc.",
+        "p4": "O meu inglês é fluente e tenho afinidade com documentação e código limpo e legível."
     },
     "services": {
         "eyebrow": "O Que Eu Faço",

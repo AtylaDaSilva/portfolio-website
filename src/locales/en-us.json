@@ -20,10 +20,11 @@
     },
     "about": {
         "eyebrow": "About Me",
-        "header": "I'm a <highlight>self-taught</highlight> linguist.",
-        "p1": "I'm Atyla (pronounced Ah-tee-lah) — I am a self-taught linguist from Brazil and I like studying foreign languages as a hobby.",
-        "p2": "I started learning English when I was a teenager, not through any kind of formal education, but by simply watching <emphasis>way</emphasis> too much YouTube and playing Video-Games. Today, I am completely fluent in English.",
-        "p3": "Currently, I'm studying Japanese and German. I also know a little bit of Russian. I want to be as fluent in these languages as I am now in English."
+        "header": "I'm a <highlight>Developer</highlight>.",
+        "p1": "My name is Atyla (pronounced Ah-tee-la) — I'm primarily a Back-End developer, but I have extensive experience working with Front-End tools and frameworks.",
+        "p2": "I hold a degree in Systems Analysis and Development, and I specialize in building Automations, REST APIs, Services, Third-Party Software Integrations, and Database Management.",
+        "p3": "I'm also skilled in building Dynamic Reports with Power BI, Excel, and more.",
+        "p4": "My English is fluent, and I have a strong affinity for documentation and clean, readable code."
     },
     "services": {
         "eyebrow": "What I Do",

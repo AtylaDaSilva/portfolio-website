@@ -43,6 +43,10 @@ export default function About() {
           <p className="about__body">
             {t("about.p3")}
           </p>
+
+          <p className="about__body">
+            {t("about.p4")}
+          </p>
           <a href="#contact" className="btn-primary" style={{ marginTop: 28, marginRight: 16, display: 'inline-flex' }}>
             {t("buttons.git")}
             <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
