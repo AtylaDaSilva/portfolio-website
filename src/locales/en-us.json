@@ -117,7 +117,7 @@
     },
     "contact": {
         "eyebrow": "Get In Touch",
-        "header": "Ready to expand your projects to an <highlight>overseas audience</highlight>?",
+        "header": "Liked my Résumé?<break/><highlight>Let's Talk</highlight>.",
         "subtext": "Send me and E-mail or contact me over on WhatsApp or LinkedIn. I'll respond in under 24 hours.",
         "email_label": "My E-mail",
         "message_sent_header": "Message Sent!",
@@ -126,15 +126,6 @@
         "form_name_placeholder": "Your Name",
         "form_textarea_label": "Tell me more about your project",
         "form_textarea_placeholder": "Get me up to speed on how I can help your project.",
-        "form_services_label": "Service",
-        "form_services": [
-            "Choose a service...",
-            "Translation & Localization",
-            "Proofreading",
-            "Video Captioning",
-            "Interpreting",
-            "Other"
-        ],
         "form_send_btn": "Send Message"
     },
     "footer": {

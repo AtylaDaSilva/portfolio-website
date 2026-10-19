@@ -6,7 +6,7 @@ import { useTranslation, Trans } from 'react-i18next';
 
 export default function Contact() {
   const { t, i18n } = useTranslation();
-  const [form, setForm] = useState({ name: '', email: '', project: '', message: '' })
+  const [form, setForm] = useState({ name: '', email: '', project: 'N/A', message: '' })
   const [showSpinner, setShowSpinner] = useState(false)
   const [sent, setSent] = useState(false)
 
@@ -52,11 +52,14 @@ export default function Contact() {
       <div className="container contact__inner">
         {/* Left */}
         <div className="contact__text">
-          <span className="section-eyebrow">{t("contact.form_send_btn")}</span>
+          <span className="section-eyebrow">{t("contact.eyebrow")}</span>
           <h2 className="contact__heading">
             <Trans
               i18nKey="contact.header"
-              components={{ highlight: <span className="gradient-text" /> }}
+              components={{
+                highlight: <span className="gradient-text" />,
+                break: <br />
+              }}
             />
           </h2>
           <p className="contact__sub">
@@ -116,14 +119,14 @@ export default function Contact() {
                   <input id="email" name="email" type="email" placeholder="email@provider.com" value={form.email} onChange={handle} required />
                 </div>
               </div>
-              <div className="form-group">
+              {/* <div className="form-group">
                 <label htmlFor="project">{t("contact.form_services_label")}</label>
                 <select id="project" name="project" value={form.project} onChange={handle} required>
                   {
                     t("contact.form_services", { returnObjects: true }).map((s) => (<option>{s}</option>))
                   }
                 </select>
-              </div>
+              </div> */}
               <div className="form-group">
                 <label htmlFor="message">{t("contact.form_textarea_label")}</label>
                 <textarea id="message" name="message" rows="5" placeholder={t("contact.form_textarea_placeholder")} value={form.message} onChange={handle} required />
