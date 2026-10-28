@@ -52,6 +52,7 @@
   letter-spacing: -0.02em;
   color: var(--text-primary);
   margin-bottom: 20px;
+  min-width: 400px;
 }
 
 .hero__sub {
