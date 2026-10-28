@@ -1,5 +1,5 @@
 import './Footer.css'
-import { LINKS, SERVICES, PHONE_F } from '../utils/constants'
+import { LINKS, PHONE_F, GITHUB, LINKEDIN } from '../utils/constants'
 import { useTranslation, Trans } from 'react-i18next'
 
 export default function Footer() {
@@ -38,8 +38,9 @@ export default function Footer() {
             <h4 className="footer__col-title">{t("footer.contact")}</h4>
             <ul>
               {[
-                { label: 'LinkedIn', href: 'https://www.linkedin.com/in/atyladasilva' },
                 { label: `WhatsApp: ${PHONE_F}`, href: '#' },
+                { label: 'LinkedIn', href: LINKEDIN },
+                { label: 'GitHub', href: GITHUB },
               ].map(({ label, href }) => (
                 <li key={label}><a href={href} target="_blank" rel="noreferrer">{label}</a></li>
               ))}
